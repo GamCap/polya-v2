@@ -1,0 +1,5850 @@
+[
+    {
+      "date": 1661084613,
+      "change": 2,
+      "counts": {
+        "insert": 6,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1661171013,
+      "change": -2,
+      "counts": {
+        "insert": 14,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1661257413,
+      "change": 11,
+      "counts": {
+        "insert": 15,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1661343813,
+      "change": -16,
+      "counts": {
+        "insert": 0,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1661430213,
+      "change": 16,
+      "counts": {
+        "insert": 17,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1661516613,
+      "change": -1,
+      "counts": {
+        "insert": 10,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1661603013,
+      "change": -5,
+      "counts": {
+        "insert": 12,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1661689413,
+      "change": 8,
+      "counts": {
+        "insert": 14,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1661775813,
+      "change": 9,
+      "counts": {
+        "insert": 9,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1661862213,
+      "change": -3,
+      "counts": {
+        "insert": 5,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1661948613,
+      "change": 1,
+      "counts": {
+        "insert": 7,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1662035013,
+      "change": 2,
+      "counts": {
+        "insert": 5,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1662121413,
+      "change": -1,
+      "counts": {
+        "insert": 10,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1662207813,
+      "change": -2,
+      "counts": {
+        "insert": 17,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1662294213,
+      "change": 4,
+      "counts": {
+        "insert": 6,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1662380613,
+      "change": -4,
+      "counts": {
+        "insert": 8,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1662467013,
+      "change": -2,
+      "counts": {
+        "insert": 6,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1662553413,
+      "change": -13,
+      "counts": {
+        "insert": 5,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1662639813,
+      "change": -17,
+      "counts": {
+        "insert": 0,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1662726213,
+      "change": -19,
+      "counts": {
+        "insert": 0,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1662812613,
+      "change": -13,
+      "counts": {
+        "insert": 1,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1662899013,
+      "change": -4,
+      "counts": {
+        "insert": 1,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1662985413,
+      "change": -7,
+      "counts": {
+        "insert": 8,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1663071813,
+      "change": -19,
+      "counts": {
+        "insert": 1,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1663158213,
+      "change": 5,
+      "counts": {
+        "insert": 10,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1663244613,
+      "change": 0,
+      "counts": {
+        "insert": 18,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1663331013,
+      "change": 3,
+      "counts": {
+        "insert": 11,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1663417413,
+      "change": -10,
+      "counts": {
+        "insert": 0,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1663503813,
+      "change": -19,
+      "counts": {
+        "insert": 1,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1663590213,
+      "change": -3,
+      "counts": {
+        "insert": 1,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1663676613,
+      "change": 10,
+      "counts": {
+        "insert": 10,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1663763013,
+      "change": 7,
+      "counts": {
+        "insert": 19,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1663849413,
+      "change": -13,
+      "counts": {
+        "insert": 4,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1663935813,
+      "change": -4,
+      "counts": {
+        "insert": 9,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1664022213,
+      "change": 19,
+      "counts": {
+        "insert": 20,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1664108613,
+      "change": 15,
+      "counts": {
+        "insert": 19,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1664195013,
+      "change": -17,
+      "counts": {
+        "insert": 0,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1664281413,
+      "change": 11,
+      "counts": {
+        "insert": 16,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1664367813,
+      "change": 9,
+      "counts": {
+        "insert": 11,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1664454213,
+      "change": -8,
+      "counts": {
+        "insert": 11,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1664540613,
+      "change": -6,
+      "counts": {
+        "insert": 14,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1664627013,
+      "change": 7,
+      "counts": {
+        "insert": 12,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1664713413,
+      "change": -5,
+      "counts": {
+        "insert": 2,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1664799813,
+      "change": -18,
+      "counts": {
+        "insert": 1,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1664886213,
+      "change": -3,
+      "counts": {
+        "insert": 17,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1664972613,
+      "change": 1,
+      "counts": {
+        "insert": 18,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1665059013,
+      "change": 13,
+      "counts": {
+        "insert": 16,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1665145413,
+      "change": -13,
+      "counts": {
+        "insert": 7,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1665231813,
+      "change": 12,
+      "counts": {
+        "insert": 15,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1665318213,
+      "change": -5,
+      "counts": {
+        "insert": 7,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1665404613,
+      "change": 8,
+      "counts": {
+        "insert": 13,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1665491013,
+      "change": -8,
+      "counts": {
+        "insert": 7,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1665577413,
+      "change": 13,
+      "counts": {
+        "insert": 18,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1665663813,
+      "change": 1,
+      "counts": {
+        "insert": 18,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1665750213,
+      "change": 6,
+      "counts": {
+        "insert": 17,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1665836613,
+      "change": 0,
+      "counts": {
+        "insert": 20,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1665923013,
+      "change": -4,
+      "counts": {
+        "insert": 9,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1666009413,
+      "change": -8,
+      "counts": {
+        "insert": 7,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1666095813,
+      "change": 10,
+      "counts": {
+        "insert": 10,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1666182213,
+      "change": -13,
+      "counts": {
+        "insert": 0,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1666268613,
+      "change": -10,
+      "counts": {
+        "insert": 5,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1666355013,
+      "change": -14,
+      "counts": {
+        "insert": 0,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1666441413,
+      "change": 1,
+      "counts": {
+        "insert": 18,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1666527813,
+      "change": -10,
+      "counts": {
+        "insert": 10,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1666614213,
+      "change": 2,
+      "counts": {
+        "insert": 20,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1666700613,
+      "change": 10,
+      "counts": {
+        "insert": 14,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1666787013,
+      "change": -10,
+      "counts": {
+        "insert": 2,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1666873413,
+      "change": -11,
+      "counts": {
+        "insert": 5,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1666959813,
+      "change": -15,
+      "counts": {
+        "insert": 3,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1667046213,
+      "change": -5,
+      "counts": {
+        "insert": 4,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1667132613,
+      "change": 3,
+      "counts": {
+        "insert": 5,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1667219013,
+      "change": -14,
+      "counts": {
+        "insert": 3,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1667305413,
+      "change": -11,
+      "counts": {
+        "insert": 5,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1667391813,
+      "change": -4,
+      "counts": {
+        "insert": 2,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1667478213,
+      "change": -1,
+      "counts": {
+        "insert": 18,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1667564613,
+      "change": -4,
+      "counts": {
+        "insert": 16,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1667651013,
+      "change": -10,
+      "counts": {
+        "insert": 0,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1667737413,
+      "change": -6,
+      "counts": {
+        "insert": 3,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1667823813,
+      "change": 15,
+      "counts": {
+        "insert": 20,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1667910213,
+      "change": 11,
+      "counts": {
+        "insert": 18,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1667996613,
+      "change": 10,
+      "counts": {
+        "insert": 13,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1668083013,
+      "change": -2,
+      "counts": {
+        "insert": 16,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1668169413,
+      "change": -7,
+      "counts": {
+        "insert": 1,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1668255813,
+      "change": 3,
+      "counts": {
+        "insert": 14,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1668342213,
+      "change": 4,
+      "counts": {
+        "insert": 13,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1668428613,
+      "change": 6,
+      "counts": {
+        "insert": 14,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1668515013,
+      "change": -2,
+      "counts": {
+        "insert": 11,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1668601413,
+      "change": 1,
+      "counts": {
+        "insert": 9,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1668687813,
+      "change": 2,
+      "counts": {
+        "insert": 15,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1668774213,
+      "change": -19,
+      "counts": {
+        "insert": 0,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1668860613,
+      "change": 5,
+      "counts": {
+        "insert": 11,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1668947013,
+      "change": 11,
+      "counts": {
+        "insert": 17,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1669033413,
+      "change": -2,
+      "counts": {
+        "insert": 14,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1669119813,
+      "change": 20,
+      "counts": {
+        "insert": 20,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1669206213,
+      "change": 10,
+      "counts": {
+        "insert": 11,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1669292613,
+      "change": -11,
+      "counts": {
+        "insert": 0,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1669379013,
+      "change": 7,
+      "counts": {
+        "insert": 15,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1669465413,
+      "change": -1,
+      "counts": {
+        "insert": 16,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1669551813,
+      "change": -8,
+      "counts": {
+        "insert": 1,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1669638213,
+      "change": -2,
+      "counts": {
+        "insert": 0,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1669724613,
+      "change": 4,
+      "counts": {
+        "insert": 11,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1669811013,
+      "change": 7,
+      "counts": {
+        "insert": 9,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1669897413,
+      "change": 19,
+      "counts": {
+        "insert": 20,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1669983813,
+      "change": -10,
+      "counts": {
+        "insert": 4,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1670070213,
+      "change": -4,
+      "counts": {
+        "insert": 8,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1670156613,
+      "change": -10,
+      "counts": {
+        "insert": 9,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1670243013,
+      "change": 1,
+      "counts": {
+        "insert": 16,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1670329413,
+      "change": -5,
+      "counts": {
+        "insert": 7,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1670415813,
+      "change": -5,
+      "counts": {
+        "insert": 9,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1670502213,
+      "change": 8,
+      "counts": {
+        "insert": 10,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1670588613,
+      "change": 5,
+      "counts": {
+        "insert": 14,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1670675013,
+      "change": -9,
+      "counts": {
+        "insert": 8,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1670761413,
+      "change": 10,
+      "counts": {
+        "insert": 15,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1670847813,
+      "change": -1,
+      "counts": {
+        "insert": 0,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1670934213,
+      "change": -4,
+      "counts": {
+        "insert": 1,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1671020613,
+      "change": 1,
+      "counts": {
+        "insert": 20,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1671107013,
+      "change": 18,
+      "counts": {
+        "insert": 20,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1671193413,
+      "change": 15,
+      "counts": {
+        "insert": 19,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1671279813,
+      "change": 9,
+      "counts": {
+        "insert": 18,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1671366213,
+      "change": -5,
+      "counts": {
+        "insert": 0,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1671452613,
+      "change": -18,
+      "counts": {
+        "insert": 1,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1671539013,
+      "change": 4,
+      "counts": {
+        "insert": 8,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1671625413,
+      "change": -5,
+      "counts": {
+        "insert": 7,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1671711813,
+      "change": 4,
+      "counts": {
+        "insert": 17,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1671798213,
+      "change": 7,
+      "counts": {
+        "insert": 15,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1671884613,
+      "change": -14,
+      "counts": {
+        "insert": 0,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1671971013,
+      "change": 3,
+      "counts": {
+        "insert": 14,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1672057413,
+      "change": -9,
+      "counts": {
+        "insert": 1,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1672143813,
+      "change": -3,
+      "counts": {
+        "insert": 8,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1672230213,
+      "change": 1,
+      "counts": {
+        "insert": 5,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1672316613,
+      "change": 3,
+      "counts": {
+        "insert": 19,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1672403013,
+      "change": 7,
+      "counts": {
+        "insert": 15,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1672489413,
+      "change": -5,
+      "counts": {
+        "insert": 9,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1672575813,
+      "change": 0,
+      "counts": {
+        "insert": 20,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1672662213,
+      "change": 10,
+      "counts": {
+        "insert": 20,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1672748613,
+      "change": -2,
+      "counts": {
+        "insert": 1,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1672835013,
+      "change": -12,
+      "counts": {
+        "insert": 0,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1672921413,
+      "change": 12,
+      "counts": {
+        "insert": 14,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1673007813,
+      "change": -7,
+      "counts": {
+        "insert": 6,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1673094213,
+      "change": -5,
+      "counts": {
+        "insert": 8,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1673180613,
+      "change": 8,
+      "counts": {
+        "insert": 18,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1673267013,
+      "change": 1,
+      "counts": {
+        "insert": 16,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1673353413,
+      "change": 9,
+      "counts": {
+        "insert": 10,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1673439813,
+      "change": -9,
+      "counts": {
+        "insert": 2,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1673526213,
+      "change": -7,
+      "counts": {
+        "insert": 2,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1673612613,
+      "change": 18,
+      "counts": {
+        "insert": 19,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1673699013,
+      "change": 19,
+      "counts": {
+        "insert": 19,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1673785413,
+      "change": 3,
+      "counts": {
+        "insert": 20,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1673871813,
+      "change": 14,
+      "counts": {
+        "insert": 16,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1673958213,
+      "change": 1,
+      "counts": {
+        "insert": 15,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1674044613,
+      "change": -14,
+      "counts": {
+        "insert": 4,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1674131013,
+      "change": -18,
+      "counts": {
+        "insert": 2,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1674217413,
+      "change": 11,
+      "counts": {
+        "insert": 14,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1674303813,
+      "change": -4,
+      "counts": {
+        "insert": 4,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1674390213,
+      "change": 6,
+      "counts": {
+        "insert": 16,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1674476613,
+      "change": 6,
+      "counts": {
+        "insert": 9,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1674563013,
+      "change": -10,
+      "counts": {
+        "insert": 7,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1674649413,
+      "change": -10,
+      "counts": {
+        "insert": 7,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1674735813,
+      "change": -1,
+      "counts": {
+        "insert": 11,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1674822213,
+      "change": 2,
+      "counts": {
+        "insert": 7,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1674908613,
+      "change": -7,
+      "counts": {
+        "insert": 12,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1674995013,
+      "change": -10,
+      "counts": {
+        "insert": 6,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1675081413,
+      "change": 13,
+      "counts": {
+        "insert": 18,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1675167813,
+      "change": 4,
+      "counts": {
+        "insert": 17,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1675254213,
+      "change": -2,
+      "counts": {
+        "insert": 4,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1675340613,
+      "change": 11,
+      "counts": {
+        "insert": 19,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1675427013,
+      "change": -5,
+      "counts": {
+        "insert": 2,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1675513413,
+      "change": 15,
+      "counts": {
+        "insert": 15,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1675599813,
+      "change": 6,
+      "counts": {
+        "insert": 20,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1675686213,
+      "change": 1,
+      "counts": {
+        "insert": 4,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1675772613,
+      "change": -5,
+      "counts": {
+        "insert": 2,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1675859013,
+      "change": 3,
+      "counts": {
+        "insert": 17,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1675945413,
+      "change": 1,
+      "counts": {
+        "insert": 6,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1676031813,
+      "change": -12,
+      "counts": {
+        "insert": 4,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1676118213,
+      "change": -4,
+      "counts": {
+        "insert": 5,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1676204613,
+      "change": -5,
+      "counts": {
+        "insert": 11,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1676291013,
+      "change": -6,
+      "counts": {
+        "insert": 11,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1676377413,
+      "change": 0,
+      "counts": {
+        "insert": 12,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1676463813,
+      "change": 15,
+      "counts": {
+        "insert": 15,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1676550213,
+      "change": -6,
+      "counts": {
+        "insert": 7,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1676636613,
+      "change": 9,
+      "counts": {
+        "insert": 19,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1676723013,
+      "change": 1,
+      "counts": {
+        "insert": 1,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1676809413,
+      "change": -16,
+      "counts": {
+        "insert": 1,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1676895813,
+      "change": -5,
+      "counts": {
+        "insert": 6,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1676982213,
+      "change": -4,
+      "counts": {
+        "insert": 0,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1677068613,
+      "change": 3,
+      "counts": {
+        "insert": 12,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1677155013,
+      "change": 6,
+      "counts": {
+        "insert": 19,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1677241413,
+      "change": 0,
+      "counts": {
+        "insert": 2,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1677327813,
+      "change": 5,
+      "counts": {
+        "insert": 8,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1677414213,
+      "change": 3,
+      "counts": {
+        "insert": 7,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1677500613,
+      "change": -14,
+      "counts": {
+        "insert": 2,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1677587013,
+      "change": 2,
+      "counts": {
+        "insert": 2,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1677673413,
+      "change": -9,
+      "counts": {
+        "insert": 5,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1677759813,
+      "change": -15,
+      "counts": {
+        "insert": 5,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1677846213,
+      "change": 12,
+      "counts": {
+        "insert": 14,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1677932613,
+      "change": -5,
+      "counts": {
+        "insert": 0,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1678019013,
+      "change": -12,
+      "counts": {
+        "insert": 8,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1678105413,
+      "change": -4,
+      "counts": {
+        "insert": 14,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1678191813,
+      "change": 10,
+      "counts": {
+        "insert": 18,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1678278213,
+      "change": 11,
+      "counts": {
+        "insert": 14,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1678364613,
+      "change": -9,
+      "counts": {
+        "insert": 8,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1678451013,
+      "change": -18,
+      "counts": {
+        "insert": 2,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1678537413,
+      "change": -9,
+      "counts": {
+        "insert": 10,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1678623813,
+      "change": -11,
+      "counts": {
+        "insert": 3,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1678710213,
+      "change": 5,
+      "counts": {
+        "insert": 8,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1678796613,
+      "change": 12,
+      "counts": {
+        "insert": 16,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1678883013,
+      "change": -15,
+      "counts": {
+        "insert": 2,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1678969413,
+      "change": 4,
+      "counts": {
+        "insert": 11,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1679055813,
+      "change": 15,
+      "counts": {
+        "insert": 19,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1679142213,
+      "change": 10,
+      "counts": {
+        "insert": 11,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1679228613,
+      "change": 6,
+      "counts": {
+        "insert": 8,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1679315013,
+      "change": 3,
+      "counts": {
+        "insert": 19,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1679401413,
+      "change": 15,
+      "counts": {
+        "insert": 18,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1679487813,
+      "change": -14,
+      "counts": {
+        "insert": 6,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1679574213,
+      "change": -9,
+      "counts": {
+        "insert": 9,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1679660613,
+      "change": 12,
+      "counts": {
+        "insert": 13,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1679747013,
+      "change": 1,
+      "counts": {
+        "insert": 1,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1679833413,
+      "change": 2,
+      "counts": {
+        "insert": 17,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1679919813,
+      "change": 18,
+      "counts": {
+        "insert": 19,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1680006213,
+      "change": -1,
+      "counts": {
+        "insert": 15,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1680092613,
+      "change": 4,
+      "counts": {
+        "insert": 4,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1680179013,
+      "change": -8,
+      "counts": {
+        "insert": 9,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1680265413,
+      "change": 7,
+      "counts": {
+        "insert": 8,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1680351813,
+      "change": -5,
+      "counts": {
+        "insert": 8,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1680438213,
+      "change": 6,
+      "counts": {
+        "insert": 19,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1680524613,
+      "change": -2,
+      "counts": {
+        "insert": 16,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1680611013,
+      "change": 2,
+      "counts": {
+        "insert": 18,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1680697413,
+      "change": 3,
+      "counts": {
+        "insert": 11,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1680783813,
+      "change": 4,
+      "counts": {
+        "insert": 18,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1680870213,
+      "change": -4,
+      "counts": {
+        "insert": 14,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1680956613,
+      "change": 13,
+      "counts": {
+        "insert": 20,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1681043013,
+      "change": -1,
+      "counts": {
+        "insert": 13,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1681129413,
+      "change": 1,
+      "counts": {
+        "insert": 3,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1681215813,
+      "change": -15,
+      "counts": {
+        "insert": 2,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1681302213,
+      "change": 3,
+      "counts": {
+        "insert": 7,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1681388613,
+      "change": 13,
+      "counts": {
+        "insert": 13,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1681475013,
+      "change": 9,
+      "counts": {
+        "insert": 14,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1681561413,
+      "change": -3,
+      "counts": {
+        "insert": 16,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1681647813,
+      "change": -8,
+      "counts": {
+        "insert": 3,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1681734213,
+      "change": -4,
+      "counts": {
+        "insert": 7,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1681820613,
+      "change": -3,
+      "counts": {
+        "insert": 8,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1681907013,
+      "change": 13,
+      "counts": {
+        "insert": 16,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1681993413,
+      "change": 1,
+      "counts": {
+        "insert": 1,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1682079813,
+      "change": -14,
+      "counts": {
+        "insert": 5,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1682166213,
+      "change": 7,
+      "counts": {
+        "insert": 15,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1682252613,
+      "change": 7,
+      "counts": {
+        "insert": 9,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1682339013,
+      "change": 8,
+      "counts": {
+        "insert": 14,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1682425413,
+      "change": -10,
+      "counts": {
+        "insert": 9,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1682511813,
+      "change": -17,
+      "counts": {
+        "insert": 1,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1682598213,
+      "change": 5,
+      "counts": {
+        "insert": 6,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1682684613,
+      "change": -2,
+      "counts": {
+        "insert": 0,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1682771013,
+      "change": -1,
+      "counts": {
+        "insert": 15,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1682857413,
+      "change": 10,
+      "counts": {
+        "insert": 14,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1682943813,
+      "change": -5,
+      "counts": {
+        "insert": 10,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1683030213,
+      "change": -4,
+      "counts": {
+        "insert": 14,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1683116613,
+      "change": 0,
+      "counts": {
+        "insert": 7,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1683203013,
+      "change": 0,
+      "counts": {
+        "insert": 20,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1683289413,
+      "change": 6,
+      "counts": {
+        "insert": 15,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1683375813,
+      "change": -10,
+      "counts": {
+        "insert": 10,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1683462213,
+      "change": -5,
+      "counts": {
+        "insert": 11,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1683548613,
+      "change": 5,
+      "counts": {
+        "insert": 12,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1683635013,
+      "change": 5,
+      "counts": {
+        "insert": 19,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1683721413,
+      "change": -15,
+      "counts": {
+        "insert": 1,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1683807813,
+      "change": 1,
+      "counts": {
+        "insert": 11,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1683894213,
+      "change": -12,
+      "counts": {
+        "insert": 7,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1683980613,
+      "change": -7,
+      "counts": {
+        "insert": 4,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1684067013,
+      "change": -15,
+      "counts": {
+        "insert": 2,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1684153413,
+      "change": 5,
+      "counts": {
+        "insert": 12,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1684239813,
+      "change": -15,
+      "counts": {
+        "insert": 3,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1684326213,
+      "change": 15,
+      "counts": {
+        "insert": 16,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1684412613,
+      "change": -16,
+      "counts": {
+        "insert": 0,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1684499013,
+      "change": -4,
+      "counts": {
+        "insert": 1,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1684585413,
+      "change": 3,
+      "counts": {
+        "insert": 7,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1684671813,
+      "change": -1,
+      "counts": {
+        "insert": 11,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1684758213,
+      "change": -1,
+      "counts": {
+        "insert": 13,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1684844613,
+      "change": 0,
+      "counts": {
+        "insert": 11,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1684931013,
+      "change": 14,
+      "counts": {
+        "insert": 17,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1685017413,
+      "change": -3,
+      "counts": {
+        "insert": 6,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1685103813,
+      "change": 19,
+      "counts": {
+        "insert": 20,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1685190213,
+      "change": -5,
+      "counts": {
+        "insert": 13,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1685276613,
+      "change": 4,
+      "counts": {
+        "insert": 16,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1685363013,
+      "change": 3,
+      "counts": {
+        "insert": 20,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1685449413,
+      "change": -16,
+      "counts": {
+        "insert": 2,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1685535813,
+      "change": -16,
+      "counts": {
+        "insert": 4,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1685622213,
+      "change": -17,
+      "counts": {
+        "insert": 1,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1685708613,
+      "change": 6,
+      "counts": {
+        "insert": 10,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1685795013,
+      "change": 10,
+      "counts": {
+        "insert": 16,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1685881413,
+      "change": -3,
+      "counts": {
+        "insert": 11,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1685967813,
+      "change": -1,
+      "counts": {
+        "insert": 12,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1686054213,
+      "change": 8,
+      "counts": {
+        "insert": 16,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1686140613,
+      "change": 7,
+      "counts": {
+        "insert": 19,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1686227013,
+      "change": 11,
+      "counts": {
+        "insert": 20,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1686313413,
+      "change": 14,
+      "counts": {
+        "insert": 16,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1686399813,
+      "change": -6,
+      "counts": {
+        "insert": 6,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1686486213,
+      "change": -3,
+      "counts": {
+        "insert": 12,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1686572613,
+      "change": 12,
+      "counts": {
+        "insert": 13,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1686659013,
+      "change": 15,
+      "counts": {
+        "insert": 18,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1686745413,
+      "change": 13,
+      "counts": {
+        "insert": 20,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1686831813,
+      "change": -16,
+      "counts": {
+        "insert": 0,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1686918213,
+      "change": 5,
+      "counts": {
+        "insert": 13,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1687004613,
+      "change": -4,
+      "counts": {
+        "insert": 9,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1687091013,
+      "change": 5,
+      "counts": {
+        "insert": 20,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1687177413,
+      "change": 10,
+      "counts": {
+        "insert": 11,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1687263813,
+      "change": -9,
+      "counts": {
+        "insert": 11,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1687350213,
+      "change": 12,
+      "counts": {
+        "insert": 12,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1687436613,
+      "change": 14,
+      "counts": {
+        "insert": 18,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1687523013,
+      "change": 10,
+      "counts": {
+        "insert": 18,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1687609413,
+      "change": 9,
+      "counts": {
+        "insert": 16,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1687695813,
+      "change": -4,
+      "counts": {
+        "insert": 0,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1687782213,
+      "change": 3,
+      "counts": {
+        "insert": 15,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1687868613,
+      "change": -11,
+      "counts": {
+        "insert": 6,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1687955013,
+      "change": -4,
+      "counts": {
+        "insert": 8,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1688041413,
+      "change": 1,
+      "counts": {
+        "insert": 13,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1688127813,
+      "change": -7,
+      "counts": {
+        "insert": 4,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1688214213,
+      "change": 5,
+      "counts": {
+        "insert": 19,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1688300613,
+      "change": -7,
+      "counts": {
+        "insert": 6,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1688387013,
+      "change": 3,
+      "counts": {
+        "insert": 16,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1688473413,
+      "change": 16,
+      "counts": {
+        "insert": 18,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1688559813,
+      "change": -5,
+      "counts": {
+        "insert": 11,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1688646213,
+      "change": 14,
+      "counts": {
+        "insert": 14,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1688732613,
+      "change": -10,
+      "counts": {
+        "insert": 4,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1688819013,
+      "change": 10,
+      "counts": {
+        "insert": 11,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1688905413,
+      "change": 7,
+      "counts": {
+        "insert": 7,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1688991813,
+      "change": 7,
+      "counts": {
+        "insert": 9,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1689078213,
+      "change": -3,
+      "counts": {
+        "insert": 13,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1689164613,
+      "change": 1,
+      "counts": {
+        "insert": 15,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1689251013,
+      "change": 4,
+      "counts": {
+        "insert": 12,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1689337413,
+      "change": -3,
+      "counts": {
+        "insert": 0,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1689423813,
+      "change": -14,
+      "counts": {
+        "insert": 1,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1689510213,
+      "change": 5,
+      "counts": {
+        "insert": 20,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1689596613,
+      "change": -7,
+      "counts": {
+        "insert": 0,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1689683013,
+      "change": -15,
+      "counts": {
+        "insert": 3,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1689769413,
+      "change": 6,
+      "counts": {
+        "insert": 13,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1689855813,
+      "change": -20,
+      "counts": {
+        "insert": 0,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1689942213,
+      "change": 3,
+      "counts": {
+        "insert": 14,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1690028613,
+      "change": 2,
+      "counts": {
+        "insert": 5,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1690115013,
+      "change": 5,
+      "counts": {
+        "insert": 5,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1690201413,
+      "change": 9,
+      "counts": {
+        "insert": 14,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1690287813,
+      "change": -11,
+      "counts": {
+        "insert": 4,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1690374213,
+      "change": -1,
+      "counts": {
+        "insert": 6,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1690460613,
+      "change": -14,
+      "counts": {
+        "insert": 6,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1690547013,
+      "change": 0,
+      "counts": {
+        "insert": 8,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1690633413,
+      "change": -6,
+      "counts": {
+        "insert": 8,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1690719813,
+      "change": -1,
+      "counts": {
+        "insert": 7,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1690806213,
+      "change": 8,
+      "counts": {
+        "insert": 9,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1690892613,
+      "change": 1,
+      "counts": {
+        "insert": 7,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1690979013,
+      "change": 0,
+      "counts": {
+        "insert": 20,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1691065413,
+      "change": 2,
+      "counts": {
+        "insert": 17,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1691151813,
+      "change": 3,
+      "counts": {
+        "insert": 15,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1691238213,
+      "change": 13,
+      "counts": {
+        "insert": 14,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1691324613,
+      "change": -5,
+      "counts": {
+        "insert": 10,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1691411013,
+      "change": 1,
+      "counts": {
+        "insert": 4,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1691497413,
+      "change": -10,
+      "counts": {
+        "insert": 2,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1691583813,
+      "change": 9,
+      "counts": {
+        "insert": 10,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1691670213,
+      "change": -5,
+      "counts": {
+        "insert": 9,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1691756613,
+      "change": 7,
+      "counts": {
+        "insert": 18,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1691843013,
+      "change": 12,
+      "counts": {
+        "insert": 17,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1691929413,
+      "change": 10,
+      "counts": {
+        "insert": 16,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1692015813,
+      "change": 12,
+      "counts": {
+        "insert": 17,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1692102213,
+      "change": 11,
+      "counts": {
+        "insert": 17,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1692188613,
+      "change": 0,
+      "counts": {
+        "insert": 13,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1692275013,
+      "change": 5,
+      "counts": {
+        "insert": 8,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1692361413,
+      "change": -2,
+      "counts": {
+        "insert": 12,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1692447813,
+      "change": 1,
+      "counts": {
+        "insert": 10,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1692534213,
+      "change": -4,
+      "counts": {
+        "insert": 11,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1692620613,
+      "change": -8,
+      "counts": {
+        "insert": 6,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1692707013,
+      "change": -5,
+      "counts": {
+        "insert": 9,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1692793413,
+      "change": 2,
+      "counts": {
+        "insert": 10,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1692879813,
+      "change": -3,
+      "counts": {
+        "insert": 12,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1692966213,
+      "change": 0,
+      "counts": {
+        "insert": 16,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1693052613,
+      "change": 0,
+      "counts": {
+        "insert": 6,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1693139013,
+      "change": -2,
+      "counts": {
+        "insert": 1,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1693225413,
+      "change": -2,
+      "counts": {
+        "insert": 16,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1693311813,
+      "change": -6,
+      "counts": {
+        "insert": 14,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1693398213,
+      "change": 0,
+      "counts": {
+        "insert": 18,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1693484613,
+      "change": -6,
+      "counts": {
+        "insert": 13,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1693571013,
+      "change": 9,
+      "counts": {
+        "insert": 10,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1693657413,
+      "change": 14,
+      "counts": {
+        "insert": 17,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1693743813,
+      "change": -1,
+      "counts": {
+        "insert": 2,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1693830213,
+      "change": -7,
+      "counts": {
+        "insert": 1,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1693916613,
+      "change": -4,
+      "counts": {
+        "insert": 2,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1694003013,
+      "change": 2,
+      "counts": {
+        "insert": 14,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1694089413,
+      "change": -15,
+      "counts": {
+        "insert": 5,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1694175813,
+      "change": 13,
+      "counts": {
+        "insert": 15,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1694262213,
+      "change": 2,
+      "counts": {
+        "insert": 6,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1694348613,
+      "change": -12,
+      "counts": {
+        "insert": 5,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1694435013,
+      "change": -2,
+      "counts": {
+        "insert": 17,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1694521413,
+      "change": -7,
+      "counts": {
+        "insert": 8,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1694607813,
+      "change": -9,
+      "counts": {
+        "insert": 8,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1694694213,
+      "change": -9,
+      "counts": {
+        "insert": 4,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1694780613,
+      "change": -4,
+      "counts": {
+        "insert": 14,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1694867013,
+      "change": 7,
+      "counts": {
+        "insert": 7,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1694953413,
+      "change": -12,
+      "counts": {
+        "insert": 7,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1695039813,
+      "change": 5,
+      "counts": {
+        "insert": 12,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1695126213,
+      "change": 10,
+      "counts": {
+        "insert": 20,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1695212613,
+      "change": -5,
+      "counts": {
+        "insert": 3,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1695299013,
+      "change": 8,
+      "counts": {
+        "insert": 13,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1695385413,
+      "change": 6,
+      "counts": {
+        "insert": 16,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1695471813,
+      "change": 8,
+      "counts": {
+        "insert": 13,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1695558213,
+      "change": -13,
+      "counts": {
+        "insert": 1,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1695644613,
+      "change": -4,
+      "counts": {
+        "insert": 5,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1695731013,
+      "change": -6,
+      "counts": {
+        "insert": 1,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1695817413,
+      "change": 5,
+      "counts": {
+        "insert": 18,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1695903813,
+      "change": -12,
+      "counts": {
+        "insert": 3,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1695990213,
+      "change": 12,
+      "counts": {
+        "insert": 17,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1696076613,
+      "change": 9,
+      "counts": {
+        "insert": 14,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1696163013,
+      "change": -2,
+      "counts": {
+        "insert": 16,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1696249413,
+      "change": 0,
+      "counts": {
+        "insert": 5,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1696335813,
+      "change": -1,
+      "counts": {
+        "insert": 14,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1696422213,
+      "change": 0,
+      "counts": {
+        "insert": 8,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1696508613,
+      "change": -15,
+      "counts": {
+        "insert": 2,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1696595013,
+      "change": 15,
+      "counts": {
+        "insert": 20,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1696681413,
+      "change": -2,
+      "counts": {
+        "insert": 4,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1696767813,
+      "change": -13,
+      "counts": {
+        "insert": 1,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1696854213,
+      "change": 13,
+      "counts": {
+        "insert": 14,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1696940613,
+      "change": -13,
+      "counts": {
+        "insert": 7,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1697027013,
+      "change": 8,
+      "counts": {
+        "insert": 17,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1697113413,
+      "change": 6,
+      "counts": {
+        "insert": 16,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1697199813,
+      "change": 8,
+      "counts": {
+        "insert": 17,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1697286213,
+      "change": -7,
+      "counts": {
+        "insert": 2,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1697372613,
+      "change": -4,
+      "counts": {
+        "insert": 12,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1697459013,
+      "change": 16,
+      "counts": {
+        "insert": 17,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1697545413,
+      "change": -4,
+      "counts": {
+        "insert": 1,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1697631813,
+      "change": 5,
+      "counts": {
+        "insert": 9,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1697718213,
+      "change": -16,
+      "counts": {
+        "insert": 3,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1697804613,
+      "change": -3,
+      "counts": {
+        "insert": 11,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1697891013,
+      "change": -7,
+      "counts": {
+        "insert": 11,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1697977413,
+      "change": 14,
+      "counts": {
+        "insert": 17,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1698063813,
+      "change": -13,
+      "counts": {
+        "insert": 0,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1698150213,
+      "change": -5,
+      "counts": {
+        "insert": 15,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1698236613,
+      "change": -4,
+      "counts": {
+        "insert": 7,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1698323013,
+      "change": 13,
+      "counts": {
+        "insert": 14,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1698409413,
+      "change": -6,
+      "counts": {
+        "insert": 13,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1698495813,
+      "change": 6,
+      "counts": {
+        "insert": 14,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1698582213,
+      "change": 0,
+      "counts": {
+        "insert": 1,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1698668613,
+      "change": 11,
+      "counts": {
+        "insert": 20,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1698755013,
+      "change": -2,
+      "counts": {
+        "insert": 10,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1698841413,
+      "change": 8,
+      "counts": {
+        "insert": 12,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1698927813,
+      "change": -13,
+      "counts": {
+        "insert": 2,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1699014213,
+      "change": -11,
+      "counts": {
+        "insert": 3,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1699100613,
+      "change": 1,
+      "counts": {
+        "insert": 16,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1699187013,
+      "change": 2,
+      "counts": {
+        "insert": 10,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1699273413,
+      "change": 2,
+      "counts": {
+        "insert": 15,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1699359813,
+      "change": 2,
+      "counts": {
+        "insert": 18,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1699446213,
+      "change": -6,
+      "counts": {
+        "insert": 5,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1699532613,
+      "change": 0,
+      "counts": {
+        "insert": 19,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1699619013,
+      "change": -4,
+      "counts": {
+        "insert": 7,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1699705413,
+      "change": 1,
+      "counts": {
+        "insert": 20,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1699791813,
+      "change": 0,
+      "counts": {
+        "insert": 1,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1699878213,
+      "change": 2,
+      "counts": {
+        "insert": 6,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1699964613,
+      "change": 14,
+      "counts": {
+        "insert": 20,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1700051013,
+      "change": -11,
+      "counts": {
+        "insert": 8,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1700137413,
+      "change": 2,
+      "counts": {
+        "insert": 2,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1700223813,
+      "change": 17,
+      "counts": {
+        "insert": 20,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1700310213,
+      "change": 4,
+      "counts": {
+        "insert": 19,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1700396613,
+      "change": 19,
+      "counts": {
+        "insert": 19,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1700483013,
+      "change": 5,
+      "counts": {
+        "insert": 9,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1700569413,
+      "change": -9,
+      "counts": {
+        "insert": 2,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1700655813,
+      "change": -1,
+      "counts": {
+        "insert": 2,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1700742213,
+      "change": 1,
+      "counts": {
+        "insert": 5,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1700828613,
+      "change": 1,
+      "counts": {
+        "insert": 18,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1700915013,
+      "change": 13,
+      "counts": {
+        "insert": 13,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1701001413,
+      "change": 7,
+      "counts": {
+        "insert": 20,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1701087813,
+      "change": 3,
+      "counts": {
+        "insert": 17,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1701174213,
+      "change": -5,
+      "counts": {
+        "insert": 2,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1701260613,
+      "change": -13,
+      "counts": {
+        "insert": 6,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1701347013,
+      "change": 7,
+      "counts": {
+        "insert": 15,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1701433413,
+      "change": 1,
+      "counts": {
+        "insert": 14,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1701519813,
+      "change": 16,
+      "counts": {
+        "insert": 16,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1701606213,
+      "change": 15,
+      "counts": {
+        "insert": 15,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1701692613,
+      "change": -13,
+      "counts": {
+        "insert": 6,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1701779013,
+      "change": -14,
+      "counts": {
+        "insert": 1,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1701865413,
+      "change": 0,
+      "counts": {
+        "insert": 2,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1701951813,
+      "change": -4,
+      "counts": {
+        "insert": 2,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1702038213,
+      "change": -5,
+      "counts": {
+        "insert": 1,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1702124613,
+      "change": 13,
+      "counts": {
+        "insert": 15,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1702211013,
+      "change": -5,
+      "counts": {
+        "insert": 12,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1702297413,
+      "change": 2,
+      "counts": {
+        "insert": 8,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1702383813,
+      "change": -2,
+      "counts": {
+        "insert": 10,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1702470213,
+      "change": 19,
+      "counts": {
+        "insert": 19,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1702556613,
+      "change": 11,
+      "counts": {
+        "insert": 14,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1702643013,
+      "change": -9,
+      "counts": {
+        "insert": 0,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1702729413,
+      "change": -5,
+      "counts": {
+        "insert": 2,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1702815813,
+      "change": -1,
+      "counts": {
+        "insert": 6,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1702902213,
+      "change": -13,
+      "counts": {
+        "insert": 7,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1702988613,
+      "change": -5,
+      "counts": {
+        "insert": 9,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1703075013,
+      "change": 10,
+      "counts": {
+        "insert": 20,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1703161413,
+      "change": -6,
+      "counts": {
+        "insert": 1,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1703247813,
+      "change": 1,
+      "counts": {
+        "insert": 8,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1703334213,
+      "change": 1,
+      "counts": {
+        "insert": 2,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1703420613,
+      "change": -14,
+      "counts": {
+        "insert": 1,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1703507013,
+      "change": -3,
+      "counts": {
+        "insert": 10,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1703593413,
+      "change": -3,
+      "counts": {
+        "insert": 10,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1703679813,
+      "change": -5,
+      "counts": {
+        "insert": 0,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1703766213,
+      "change": -9,
+      "counts": {
+        "insert": 6,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1703852613,
+      "change": 0,
+      "counts": {
+        "insert": 7,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1703939013,
+      "change": -7,
+      "counts": {
+        "insert": 6,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1704025413,
+      "change": 1,
+      "counts": {
+        "insert": 19,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1704111813,
+      "change": -5,
+      "counts": {
+        "insert": 8,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1704198213,
+      "change": -4,
+      "counts": {
+        "insert": 3,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1704284613,
+      "change": -15,
+      "counts": {
+        "insert": 4,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1704371013,
+      "change": 8,
+      "counts": {
+        "insert": 9,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1704457413,
+      "change": -4,
+      "counts": {
+        "insert": 15,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1704543813,
+      "change": 1,
+      "counts": {
+        "insert": 14,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1704630213,
+      "change": -4,
+      "counts": {
+        "insert": 8,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1704716613,
+      "change": -3,
+      "counts": {
+        "insert": 3,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1704803013,
+      "change": 8,
+      "counts": {
+        "insert": 20,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1704889413,
+      "change": 10,
+      "counts": {
+        "insert": 12,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1704975813,
+      "change": 4,
+      "counts": {
+        "insert": 19,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1705062213,
+      "change": 14,
+      "counts": {
+        "insert": 19,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1705148613,
+      "change": -14,
+      "counts": {
+        "insert": 0,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1705235013,
+      "change": 3,
+      "counts": {
+        "insert": 20,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1705321413,
+      "change": 0,
+      "counts": {
+        "insert": 1,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1705407813,
+      "change": -14,
+      "counts": {
+        "insert": 2,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1705494213,
+      "change": 14,
+      "counts": {
+        "insert": 19,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1705580613,
+      "change": -11,
+      "counts": {
+        "insert": 2,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1705667013,
+      "change": -8,
+      "counts": {
+        "insert": 12,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1705753413,
+      "change": 11,
+      "counts": {
+        "insert": 15,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1705839813,
+      "change": -1,
+      "counts": {
+        "insert": 0,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1705926213,
+      "change": 0,
+      "counts": {
+        "insert": 13,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1706012613,
+      "change": -18,
+      "counts": {
+        "insert": 0,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1706099013,
+      "change": 17,
+      "counts": {
+        "insert": 17,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1706185413,
+      "change": 5,
+      "counts": {
+        "insert": 18,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1706271813,
+      "change": 9,
+      "counts": {
+        "insert": 13,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1706358213,
+      "change": 4,
+      "counts": {
+        "insert": 19,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1706444613,
+      "change": 15,
+      "counts": {
+        "insert": 17,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1706531013,
+      "change": 4,
+      "counts": {
+        "insert": 20,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1706617413,
+      "change": -2,
+      "counts": {
+        "insert": 9,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1706703813,
+      "change": -14,
+      "counts": {
+        "insert": 3,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1706790213,
+      "change": -3,
+      "counts": {
+        "insert": 7,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1706876613,
+      "change": -9,
+      "counts": {
+        "insert": 9,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1706963013,
+      "change": -3,
+      "counts": {
+        "insert": 17,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1707049413,
+      "change": -7,
+      "counts": {
+        "insert": 7,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1707135813,
+      "change": -9,
+      "counts": {
+        "insert": 5,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1707222213,
+      "change": 0,
+      "counts": {
+        "insert": 16,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1707308613,
+      "change": 7,
+      "counts": {
+        "insert": 12,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1707395013,
+      "change": 4,
+      "counts": {
+        "insert": 20,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1707481413,
+      "change": 13,
+      "counts": {
+        "insert": 17,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1707567813,
+      "change": -7,
+      "counts": {
+        "insert": 8,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1707654213,
+      "change": -1,
+      "counts": {
+        "insert": 1,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1707740613,
+      "change": 0,
+      "counts": {
+        "insert": 8,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1707827013,
+      "change": 12,
+      "counts": {
+        "insert": 16,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1707913413,
+      "change": 13,
+      "counts": {
+        "insert": 16,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1707999813,
+      "change": -1,
+      "counts": {
+        "insert": 7,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1708086213,
+      "change": -9,
+      "counts": {
+        "insert": 11,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1708172613,
+      "change": -2,
+      "counts": {
+        "insert": 1,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1708259013,
+      "change": -8,
+      "counts": {
+        "insert": 6,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1708345413,
+      "change": -1,
+      "counts": {
+        "insert": 5,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1708431813,
+      "change": 8,
+      "counts": {
+        "insert": 16,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1708518213,
+      "change": -20,
+      "counts": {
+        "insert": 0,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1708604613,
+      "change": -4,
+      "counts": {
+        "insert": 4,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1708691013,
+      "change": -10,
+      "counts": {
+        "insert": 4,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1708777413,
+      "change": -6,
+      "counts": {
+        "insert": 11,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1708863813,
+      "change": 12,
+      "counts": {
+        "insert": 17,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1708950213,
+      "change": -1,
+      "counts": {
+        "insert": 13,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1709036613,
+      "change": 0,
+      "counts": {
+        "insert": 7,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1709123013,
+      "change": 11,
+      "counts": {
+        "insert": 20,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1709209413,
+      "change": 15,
+      "counts": {
+        "insert": 18,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1709295813,
+      "change": -7,
+      "counts": {
+        "insert": 7,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1709382213,
+      "change": -6,
+      "counts": {
+        "insert": 4,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1709468613,
+      "change": -2,
+      "counts": {
+        "insert": 12,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1709555013,
+      "change": -8,
+      "counts": {
+        "insert": 12,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1709641413,
+      "change": 15,
+      "counts": {
+        "insert": 18,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1709727813,
+      "change": -11,
+      "counts": {
+        "insert": 1,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1709814213,
+      "change": -10,
+      "counts": {
+        "insert": 2,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1709900613,
+      "change": 14,
+      "counts": {
+        "insert": 14,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1709987013,
+      "change": 16,
+      "counts": {
+        "insert": 20,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1710073413,
+      "change": -4,
+      "counts": {
+        "insert": 8,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1710159813,
+      "change": 14,
+      "counts": {
+        "insert": 16,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1710246213,
+      "change": 9,
+      "counts": {
+        "insert": 15,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1710332613,
+      "change": -2,
+      "counts": {
+        "insert": 18,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1710419013,
+      "change": 2,
+      "counts": {
+        "insert": 17,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1710505413,
+      "change": 14,
+      "counts": {
+        "insert": 19,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1710591813,
+      "change": 13,
+      "counts": {
+        "insert": 19,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1710678213,
+      "change": 4,
+      "counts": {
+        "insert": 20,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1710764613,
+      "change": 6,
+      "counts": {
+        "insert": 11,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1710851013,
+      "change": 11,
+      "counts": {
+        "insert": 15,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1710937413,
+      "change": 2,
+      "counts": {
+        "insert": 11,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1711023813,
+      "change": -16,
+      "counts": {
+        "insert": 4,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1711110213,
+      "change": -5,
+      "counts": {
+        "insert": 9,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1711196613,
+      "change": 4,
+      "counts": {
+        "insert": 17,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1711283013,
+      "change": -7,
+      "counts": {
+        "insert": 12,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1711369413,
+      "change": 7,
+      "counts": {
+        "insert": 19,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1711455813,
+      "change": 14,
+      "counts": {
+        "insert": 16,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1711542213,
+      "change": -3,
+      "counts": {
+        "insert": 13,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1711628613,
+      "change": 1,
+      "counts": {
+        "insert": 4,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1711715013,
+      "change": -1,
+      "counts": {
+        "insert": 1,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1711801413,
+      "change": 14,
+      "counts": {
+        "insert": 15,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1711887813,
+      "change": -5,
+      "counts": {
+        "insert": 2,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1711974213,
+      "change": 10,
+      "counts": {
+        "insert": 12,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1712060613,
+      "change": 7,
+      "counts": {
+        "insert": 19,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1712147013,
+      "change": 1,
+      "counts": {
+        "insert": 8,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1712233413,
+      "change": -5,
+      "counts": {
+        "insert": 3,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1712319813,
+      "change": 4,
+      "counts": {
+        "insert": 7,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1712406213,
+      "change": -13,
+      "counts": {
+        "insert": 4,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1712492613,
+      "change": 19,
+      "counts": {
+        "insert": 20,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1712579013,
+      "change": 15,
+      "counts": {
+        "insert": 20,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1712665413,
+      "change": 10,
+      "counts": {
+        "insert": 17,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1712751813,
+      "change": 1,
+      "counts": {
+        "insert": 19,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1712838213,
+      "change": -17,
+      "counts": {
+        "insert": 1,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1712924613,
+      "change": -2,
+      "counts": {
+        "insert": 9,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1713011013,
+      "change": -4,
+      "counts": {
+        "insert": 7,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1713097413,
+      "change": 3,
+      "counts": {
+        "insert": 18,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1713183813,
+      "change": -6,
+      "counts": {
+        "insert": 7,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1713270213,
+      "change": 3,
+      "counts": {
+        "insert": 5,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1713356613,
+      "change": 10,
+      "counts": {
+        "insert": 12,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1713443013,
+      "change": 10,
+      "counts": {
+        "insert": 20,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1713529413,
+      "change": -1,
+      "counts": {
+        "insert": 4,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1713615813,
+      "change": -13,
+      "counts": {
+        "insert": 0,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1713702213,
+      "change": -7,
+      "counts": {
+        "insert": 3,
+        "remove": 10
+      }
+    },
+    {
+      "date": 1713788613,
+      "change": -12,
+      "counts": {
+        "insert": 0,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1713875013,
+      "change": -7,
+      "counts": {
+        "insert": 9,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1713961413,
+      "change": -4,
+      "counts": {
+        "insert": 16,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1714047813,
+      "change": -17,
+      "counts": {
+        "insert": 2,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1714134213,
+      "change": 1,
+      "counts": {
+        "insert": 6,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1714220613,
+      "change": -8,
+      "counts": {
+        "insert": 1,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1714307013,
+      "change": 5,
+      "counts": {
+        "insert": 19,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1714393413,
+      "change": 1,
+      "counts": {
+        "insert": 5,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1714479813,
+      "change": -12,
+      "counts": {
+        "insert": 0,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1714566213,
+      "change": 9,
+      "counts": {
+        "insert": 20,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1714652613,
+      "change": 8,
+      "counts": {
+        "insert": 11,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1714739013,
+      "change": 2,
+      "counts": {
+        "insert": 11,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1714825413,
+      "change": 4,
+      "counts": {
+        "insert": 8,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1714911813,
+      "change": -4,
+      "counts": {
+        "insert": 16,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1714998213,
+      "change": -3,
+      "counts": {
+        "insert": 8,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1715084613,
+      "change": -2,
+      "counts": {
+        "insert": 4,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1715171013,
+      "change": 0,
+      "counts": {
+        "insert": 18,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1715257413,
+      "change": -2,
+      "counts": {
+        "insert": 12,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1715343813,
+      "change": 12,
+      "counts": {
+        "insert": 14,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1715430213,
+      "change": 2,
+      "counts": {
+        "insert": 2,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1715516613,
+      "change": 13,
+      "counts": {
+        "insert": 15,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1715603013,
+      "change": 11,
+      "counts": {
+        "insert": 19,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1715689413,
+      "change": 13,
+      "counts": {
+        "insert": 14,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1715775813,
+      "change": -17,
+      "counts": {
+        "insert": 0,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1715862213,
+      "change": -19,
+      "counts": {
+        "insert": 1,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1715948613,
+      "change": 0,
+      "counts": {
+        "insert": 1,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1716035013,
+      "change": 2,
+      "counts": {
+        "insert": 9,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1716121413,
+      "change": -1,
+      "counts": {
+        "insert": 15,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1716207813,
+      "change": 1,
+      "counts": {
+        "insert": 16,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1716294213,
+      "change": -1,
+      "counts": {
+        "insert": 17,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1716380613,
+      "change": 2,
+      "counts": {
+        "insert": 13,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1716467013,
+      "change": 4,
+      "counts": {
+        "insert": 15,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1716553413,
+      "change": 2,
+      "counts": {
+        "insert": 11,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1716639813,
+      "change": -1,
+      "counts": {
+        "insert": 17,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1716726213,
+      "change": -19,
+      "counts": {
+        "insert": 0,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1716812613,
+      "change": 17,
+      "counts": {
+        "insert": 18,
+        "remove": 1
+      }
+    },
+    {
+      "date": 1716899013,
+      "change": -10,
+      "counts": {
+        "insert": 4,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1716985413,
+      "change": -6,
+      "counts": {
+        "insert": 13,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1717071813,
+      "change": -2,
+      "counts": {
+        "insert": 11,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1717158213,
+      "change": 12,
+      "counts": {
+        "insert": 16,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1717244613,
+      "change": 1,
+      "counts": {
+        "insert": 17,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1717331013,
+      "change": -1,
+      "counts": {
+        "insert": 14,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1717417413,
+      "change": 4,
+      "counts": {
+        "insert": 20,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1717503813,
+      "change": 4,
+      "counts": {
+        "insert": 4,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1717590213,
+      "change": 14,
+      "counts": {
+        "insert": 20,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1717676613,
+      "change": 0,
+      "counts": {
+        "insert": 5,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1717763013,
+      "change": -16,
+      "counts": {
+        "insert": 3,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1717849413,
+      "change": -2,
+      "counts": {
+        "insert": 16,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1717935813,
+      "change": 10,
+      "counts": {
+        "insert": 15,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1718022213,
+      "change": 4,
+      "counts": {
+        "insert": 9,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1718108613,
+      "change": -6,
+      "counts": {
+        "insert": 12,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1718195013,
+      "change": 14,
+      "counts": {
+        "insert": 14,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1718281413,
+      "change": -13,
+      "counts": {
+        "insert": 3,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1718367813,
+      "change": -4,
+      "counts": {
+        "insert": 11,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1718454213,
+      "change": 2,
+      "counts": {
+        "insert": 16,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1718540613,
+      "change": 0,
+      "counts": {
+        "insert": 17,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1718627013,
+      "change": -1,
+      "counts": {
+        "insert": 1,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1718713413,
+      "change": 1,
+      "counts": {
+        "insert": 16,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1718799813,
+      "change": 14,
+      "counts": {
+        "insert": 20,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1718886213,
+      "change": -14,
+      "counts": {
+        "insert": 4,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1718972613,
+      "change": 1,
+      "counts": {
+        "insert": 17,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1719059013,
+      "change": -6,
+      "counts": {
+        "insert": 14,
+        "remove": 20
+      }
+    },
+    {
+      "date": 1719145413,
+      "change": -5,
+      "counts": {
+        "insert": 7,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1719231813,
+      "change": -1,
+      "counts": {
+        "insert": 13,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1719318213,
+      "change": -3,
+      "counts": {
+        "insert": 12,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1719404613,
+      "change": -4,
+      "counts": {
+        "insert": 8,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1719491013,
+      "change": -3,
+      "counts": {
+        "insert": 2,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1719577413,
+      "change": 6,
+      "counts": {
+        "insert": 8,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1719663813,
+      "change": -4,
+      "counts": {
+        "insert": 7,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1719750213,
+      "change": -1,
+      "counts": {
+        "insert": 16,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1719836613,
+      "change": 1,
+      "counts": {
+        "insert": 13,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1719923013,
+      "change": 11,
+      "counts": {
+        "insert": 15,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1720009413,
+      "change": -1,
+      "counts": {
+        "insert": 12,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1720095813,
+      "change": -4,
+      "counts": {
+        "insert": 12,
+        "remove": 16
+      }
+    },
+    {
+      "date": 1720182213,
+      "change": -1,
+      "counts": {
+        "insert": 16,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1720268613,
+      "change": 7,
+      "counts": {
+        "insert": 20,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1720355013,
+      "change": 11,
+      "counts": {
+        "insert": 16,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1720441413,
+      "change": 7,
+      "counts": {
+        "insert": 14,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1720527813,
+      "change": -1,
+      "counts": {
+        "insert": 11,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1720614213,
+      "change": -1,
+      "counts": {
+        "insert": 11,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1720700613,
+      "change": 8,
+      "counts": {
+        "insert": 19,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1720787013,
+      "change": -4,
+      "counts": {
+        "insert": 7,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1720873413,
+      "change": -2,
+      "counts": {
+        "insert": 10,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1720959813,
+      "change": 11,
+      "counts": {
+        "insert": 13,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1721046213,
+      "change": -15,
+      "counts": {
+        "insert": 4,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1721132613,
+      "change": 12,
+      "counts": {
+        "insert": 20,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1721219013,
+      "change": 14,
+      "counts": {
+        "insert": 18,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1721305413,
+      "change": 9,
+      "counts": {
+        "insert": 11,
+        "remove": 2
+      }
+    },
+    {
+      "date": 1721391813,
+      "change": 1,
+      "counts": {
+        "insert": 12,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1721478213,
+      "change": 9,
+      "counts": {
+        "insert": 16,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1721564613,
+      "change": -3,
+      "counts": {
+        "insert": 2,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1721651013,
+      "change": 0,
+      "counts": {
+        "insert": 14,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1721737413,
+      "change": 9,
+      "counts": {
+        "insert": 9,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1721823813,
+      "change": 2,
+      "counts": {
+        "insert": 19,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1721910213,
+      "change": -3,
+      "counts": {
+        "insert": 14,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1721996613,
+      "change": 13,
+      "counts": {
+        "insert": 16,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1722083013,
+      "change": -13,
+      "counts": {
+        "insert": 4,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1722169413,
+      "change": -13,
+      "counts": {
+        "insert": 0,
+        "remove": 13
+      }
+    },
+    {
+      "date": 1722255813,
+      "change": -9,
+      "counts": {
+        "insert": 6,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1722342213,
+      "change": 16,
+      "counts": {
+        "insert": 20,
+        "remove": 4
+      }
+    },
+    {
+      "date": 1722428613,
+      "change": -15,
+      "counts": {
+        "insert": 0,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1722515013,
+      "change": -8,
+      "counts": {
+        "insert": 3,
+        "remove": 11
+      }
+    },
+    {
+      "date": 1722601413,
+      "change": -9,
+      "counts": {
+        "insert": 5,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1722687813,
+      "change": 12,
+      "counts": {
+        "insert": 20,
+        "remove": 8
+      }
+    },
+    {
+      "date": 1722774213,
+      "change": -15,
+      "counts": {
+        "insert": 3,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1722860613,
+      "change": 1,
+      "counts": {
+        "insert": 18,
+        "remove": 17
+      }
+    },
+    {
+      "date": 1722947013,
+      "change": -1,
+      "counts": {
+        "insert": 5,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1723033413,
+      "change": 0,
+      "counts": {
+        "insert": 3,
+        "remove": 3
+      }
+    },
+    {
+      "date": 1723119813,
+      "change": -1,
+      "counts": {
+        "insert": 4,
+        "remove": 5
+      }
+    },
+    {
+      "date": 1723206213,
+      "change": 3,
+      "counts": {
+        "insert": 15,
+        "remove": 12
+      }
+    },
+    {
+      "date": 1723292613,
+      "change": -18,
+      "counts": {
+        "insert": 1,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1723379013,
+      "change": 9,
+      "counts": {
+        "insert": 16,
+        "remove": 7
+      }
+    },
+    {
+      "date": 1723465413,
+      "change": 5,
+      "counts": {
+        "insert": 20,
+        "remove": 15
+      }
+    },
+    {
+      "date": 1723551813,
+      "change": 3,
+      "counts": {
+        "insert": 3,
+        "remove": 0
+      }
+    },
+    {
+      "date": 1723638213,
+      "change": -4,
+      "counts": {
+        "insert": 2,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1723724613,
+      "change": -18,
+      "counts": {
+        "insert": 1,
+        "remove": 19
+      }
+    },
+    {
+      "date": 1723811013,
+      "change": 1,
+      "counts": {
+        "insert": 15,
+        "remove": 14
+      }
+    },
+    {
+      "date": 1723897413,
+      "change": 1,
+      "counts": {
+        "insert": 19,
+        "remove": 18
+      }
+    },
+    {
+      "date": 1723983813,
+      "change": -1,
+      "counts": {
+        "insert": 5,
+        "remove": 6
+      }
+    },
+    {
+      "date": 1724070213,
+      "change": 11,
+      "counts": {
+        "insert": 20,
+        "remove": 9
+      }
+    },
+    {
+      "date": 1724156613,
+      "change": 2,
+      "counts": {
+        "insert": 4,
+        "remove": 2
+      }
+    }
+  ]
