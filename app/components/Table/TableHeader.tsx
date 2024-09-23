@@ -1,5 +1,5 @@
 import React from "react";
-import { Column } from "./types";
+import { Column } from "@/types";
 import { Icon } from "@/components/ui/Icon";
 
 interface TableHeaderProps {
@@ -42,13 +42,13 @@ export const TableHeader: React.FC<TableHeaderProps> = ({
             return (
               <th
                 key={column.id}
-                onClick={() => column.sortable && handleSort(column.id)}
-                style={{ cursor: column.sortable ? "pointer" : "default" }}
+                onClick={() => column && handleSort(column.id)}
+                style={{ cursor: column ? "pointer" : "default" }}
                 className="sticky top-0 bg-white dark:bg-black"
               >
                 <div className="flex flex-row justify-between items-center gap-1 p-2">
                   <p>{column.label}</p>
-                  {column.sortable && (
+                  {column && (
                     <span style={{ marginLeft: "5px" }}>
                       {renderSortIcon(column.id)}
                     </span>

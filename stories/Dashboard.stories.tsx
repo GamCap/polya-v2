@@ -341,11 +341,10 @@ const widgets: DashboardWidget[] = [
     widgetProps: {
       data: mockData,
       columns: [
-        { id: "name", label: "Name", sortable: true },
+        { id: "name", label: "Name" },
         {
           id: "age",
           label: "Age",
-          sortable: true,
           filterable: true,
           filterType: "range",
         },
@@ -353,7 +352,6 @@ const widgets: DashboardWidget[] = [
         {
           id: "country",
           label: "Country",
-          sortable: true,
           filterable: true,
           filterType: "multi-select",
           options: ["USA", "Canada", "Australia", "UK"],
@@ -361,18 +359,11 @@ const widgets: DashboardWidget[] = [
         {
           id: "rating",
           label: "Rating",
-          sortable: true,
           filterable: true,
           filterType: "range",
-          renderer: (value: number) => (
-            <span
-              style={{
-                color: value >= 4.5 ? "green" : value >= 4 ? "orange" : "red",
-              }}
-            >
-              {value}
-            </span>
-          ),
+          formatterOptions: {
+            customFormatter: "posNeg",
+          },
         },
       ],
       pageSize: 7,
@@ -466,10 +457,10 @@ const availableWidgets: DashboardWidget[] = [
     widgetProps: {
       data: mockData,
       columns: [
-        { id: "name", label: "Name", sortable: true },
-        { id: "age", label: "Age", sortable: true },
+        { id: "name", label: "Name" },
+        { id: "age", label: "Age" },
         { id: "email", label: "Email" },
-        { id: "country", label: "Country", sortable: true },
+        { id: "country", label: "Country" },
       ],
     },
     dashboardItemProps: {

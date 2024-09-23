@@ -224,12 +224,12 @@ export const CustomRenderers: Story = {
   args: {
     data: mockData,
     columns: [
-      { id: "name", label: "Name", sortable: true },
-      { id: "age", label: "Age", sortable: true },
+      { id: "name", label: "Name" },
+      { id: "age", label: "Age" },
       {
         id: "email",
         label: "Email",
-        renderer: (value: string) => <a href={`mailto:${value}`}>{value}</a>,
+        formatterOptions: { customFormatter: "email" },
       },
     ],
   },
@@ -239,11 +239,11 @@ export const FilterableColumns: Story = {
   args: {
     data: mockData,
     columns: [
-      { id: "name", label: "Name", sortable: true },
+      { id: "name", label: "Name" },
       {
         id: "age",
         label: "Age",
-        sortable: true,
+
         filterable: true,
         filterType: "range",
       },
@@ -251,7 +251,7 @@ export const FilterableColumns: Story = {
       {
         id: "country",
         label: "Country",
-        sortable: true,
+
         filterable: true,
         filterType: "multi-select",
         options: ["USA", "Canada", "Australia", "UK"],
@@ -259,18 +259,10 @@ export const FilterableColumns: Story = {
       {
         id: "rating",
         label: "Rating",
-        sortable: true,
+
         filterable: true,
         filterType: "range",
-        renderer: (value: number) => (
-          <span
-            style={{
-              color: value >= 4.5 ? "green" : value >= 4 ? "orange" : "red",
-            }}
-          >
-            {value}
-          </span>
-        ),
+        formatterOptions: { customFormatter: "posNeg" },
       },
     ],
   },

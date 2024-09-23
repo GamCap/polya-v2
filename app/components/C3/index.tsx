@@ -28,11 +28,9 @@ const MultiSeries: React.FC<MultiSeriesProps> = ({
 
     const colorMapping: { [key: string]: string } = {};
 
-    // Loop through the columns and assign colors, skipping the x-axis column if necessary
     data.columns.forEach((col, index) => {
-      const dataKey = col[0]; // The first element is the data key
+      const dataKey = col[0];
 
-      // Skip the column if it matches the x-axis key
       if (dataKey === data.x) return;
 
       colorMapping[dataKey as string] = colors[index % colors.length];

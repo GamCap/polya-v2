@@ -116,17 +116,14 @@ export const CalendarHeatmap: React.FC<CalendarHeatmapProps> = ({
   useEffect(() => {
     // Group data by year
     if (originalData.length > 0) {
-      const groupedData = originalData.reduce(
-        (acc, item) => {
-          const year = new Date(item.date).getUTCFullYear().toString();
-          if (!acc[year]) {
-            acc[year] = [];
-          }
-          acc[year].push(item);
-          return acc;
-        },
-        {} as { [year: string]: CalendarHeatmapData[] }
-      );
+      const groupedData = originalData.reduce((acc, item) => {
+        const year = new Date(item.date).getUTCFullYear().toString();
+        if (!acc[year]) {
+          acc[year] = [];
+        }
+        acc[year].push(item);
+        return acc;
+      }, {} as { [year: string]: CalendarHeatmapData[] });
 
       setYearData(groupedData);
       const yearsKeys = Object.keys(groupedData);

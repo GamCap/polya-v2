@@ -1,9 +1,10 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
-import { Column } from "./types";
-import { Button } from "../ui/Button";
-import { TextInput } from "../ui/TextInput";
-import { Checkbox } from "../ui/Checkbox";
+
+import { Button } from "@/components/ui/Button";
+import { TextInput } from "@/components/ui/TextInput";
+import { Checkbox } from "@/components/ui/Checkbox";
+import { Column } from "@/types";
 
 interface CustomizeMenuProps {
   columns: Column[];

@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Column } from "./types";
-import { Button } from "../ui/Button";
-import { TextInput } from "../ui/TextInput";
+import { Column } from "@/types";
+import { Button } from "@/components/ui/Button";
+import { TextInput } from "@/components/ui/TextInput";
 
 interface FilterMenuProps {
   columns: Column[];
