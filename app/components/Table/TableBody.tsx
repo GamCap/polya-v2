@@ -1,4 +1,4 @@
-import { Column } from "@/types";
+import { Column } from "@/types/supabase";
 import { TableRow } from "./TableRow";
 
 interface TableBodyProps {

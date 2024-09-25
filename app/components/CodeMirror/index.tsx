@@ -6,24 +6,21 @@ import { sql } from "@codemirror/lang-sql";
 import { ViewUpdate } from "@codemirror/view";
 import { useTheme } from "next-themes";
 import { useParams, useRouter } from "next/navigation";
-import {
-  useQueryData,
-  useUpdateQuery,
-  useCreateExecution,
-  useCreateQuery,
-} from "@/hooks/useData";
+import { useQueryDetails } from "@/hooks/supabase/useQueryDetails";
+import { useCreateQuery } from "@/hooks/supabase/useCreateQuery";
+import { useUpdateQuery } from "@/hooks/supabase/useUpdateQuery";
 
 const CodeEditor: React.FC = () => {
   const { theme } = useTheme();
   const params = useParams();
   const router = useRouter();
 
-  const queryId = params.queryId ? Number(params.queryId) : null;
+  const queryId = params.queryId ? params.queryId as string : null;
 
   const [queryText, setQueryText] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
 
-  const { data: queryData } = useQueryData(queryId);
+  const { data: queryData } = useQueryDetails(queryId || "");
 
   useEffect(() => {
     if (queryData) {
@@ -33,7 +30,6 @@ const CodeEditor: React.FC = () => {
 
   const createQueryMutation = useCreateQuery();
   const updateQueryMutation = useUpdateQuery();
-  const createExecutionMutation = useCreateExecution();
 
   const handleChange = (value: string, viewUpdate: ViewUpdate) => {
     setQueryText(value);
@@ -49,28 +45,24 @@ const CodeEditor: React.FC = () => {
 
     try {
       if (!queryId) {
-        const name = `Query ${Date.now()}`;
         const data = await createQueryMutation.mutateAsync({
-          name,
-          sql: queryText,
+          userId: "1b415c6a-277f-41f9-92ae-dcc76d9c961d",
+          query: queryText,
         });
 
-        if (!data.queryId || !data.visualizationId) {
+        if (!data.query_id || !data.visualization_id) {
           throw new Error("Invalid response from the server.");
         }
 
-        router.replace(`/queries/${data.queryId}/${data.visualizationId}`);
+        router.replace(`/queries/${data.query_id}/${data.visualization_id}`);
       } else {
-        await updateQueryMutation.mutateAsync({
+        const updateData = await updateQueryMutation.mutateAsync({
           queryId,
-          newQueryContent: queryText,
-        });
-        const executionData = await createExecutionMutation.mutateAsync({
-          queryId,
-          sql: queryText,
+          query: queryText,
         });
 
-        if (!executionData.executionId) {
+
+        if (!updateData.execution_id) {
           throw new Error("Failed to create execution.");
         }
 

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Table } from "@/components/Table";
-import { Visualization, Execution } from "@/types";
+import { Visualization, Execution } from "@/types/supabase";
 
 interface PreviewProps {
   visualization: Visualization;

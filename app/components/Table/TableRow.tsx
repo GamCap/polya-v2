@@ -1,6 +1,6 @@
 import React from "react";
 import { TableCell } from "./TableCell";
-import { Column } from "@/types";
+import { Column } from "@/types/supabase";
 
 interface TableRowProps {
   item: any;

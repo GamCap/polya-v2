@@ -1,18 +1,12 @@
 "use client";
-
 import React from "react";
-import { useRouter } from "next/navigation";
 import { Button } from "./components/ui/Button";
-import { useQueries } from "./hooks/useData";
+import { useQueriesList } from "./hooks/supabase/useQueriesList";
+import Link from "next/link";
 
 const HomePage: React.FC = () => {
-  const router = useRouter();
 
-  const handleCreateNewQuery = () => {
-    router.push("/queries");
-  };
-
-  const {data: queries, isLoading} = useQueries();
+  const {data: queries, isLoading} = useQueriesList();
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
@@ -22,8 +16,10 @@ const HomePage: React.FC = () => {
         ) : (
 
             queries?.map((query) => (
-              <Button key={query.id} onClick={() => router.push(`/queries/${query.id}/${query.visualizations?.[0]?.id}`)} variant="subtle" size="small">
+              <Button key={query.id}  variant="subtle" size="small">
+                <Link href={`/queries/${query.id}/${query.firstVisualizationId}`}>
                 {query.name}
+                </Link>
               </Button>
             ))
           
@@ -31,8 +27,8 @@ const HomePage: React.FC = () => {
       }
       </div>  
       
-      <Button variant="subtle" onClick={handleCreateNewQuery}>
-        Create New Query
+      <Button variant="subtle">
+        <Link href="/queries">Create New Query</Link>
       </Button>
     </div>
   );

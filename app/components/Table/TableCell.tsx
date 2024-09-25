@@ -1,5 +1,5 @@
 import React from "react";
-import { Column } from "@/types";
+import { Column } from "@/types/supabase";
 
 interface TableCellProps {
   item: any;
@@ -12,15 +12,6 @@ export const TableCell: React.FC<TableCellProps> = ({ item, column }) => {
   if (column.formatterOptions)
     if (column.formatterOptions.dateFormat) {
       return <td className="p-2">{new Date(value).toLocaleDateString()}</td>;
-    } else if (column.formatterOptions.numberFormat) {
-      return (
-        <td className="p-2">
-          {new Intl.NumberFormat(
-            "en-US",
-            column.formatterOptions.numberFormat
-          ).format(value)}
-        </td>
-      );
     } else if (column.formatterOptions.customFormatter) {
       switch (column.formatterOptions.customFormatter) {
         case "shortDate":

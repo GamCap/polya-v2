@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Column } from "@/types";
+import { Column } from "@/types/supabase";
 import { Button } from "@/components/ui/Button";
 
 interface TableColumnVisibilityProps {

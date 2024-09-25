@@ -1,4 +1,4 @@
-import { Column } from "@/types";
+import { Column } from "@/types/supabase";
 
 interface TableProps {
   data: any[];

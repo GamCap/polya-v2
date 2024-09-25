@@ -5,27 +5,22 @@ import { Mosaic, MosaicNode, MosaicWindow } from "react-mosaic-component";
 import CodeEditor from "@/components/CodeMirror";
 import Preview from "@/components/Preview";
 import { useParams, useRouter } from "next/navigation";
-import {
-  useQueryData,
-  useVisualizations,
-  useLatestExecution,
-} from "@/hooks/useData";
+import { useQueryDetails } from "@/hooks/supabase/useQueryDetails";
+import { Button } from "@/components/ui/Button";
 
 const QueriesLayout: React.FC = () => {
   const params = useParams();
   const router = useRouter();
 
-  const queryId = params.queryId ? Number(params.queryId) : null;
+  const queryId = params.queryId ? params.queryId as string : null;
   const visualizationId = params.visualizationId
-    ? Number(params.visualizationId)
+    ? params.visualizationId as string
     : null;
 
-  const { data: queryData } = useQueryData(queryId);
-  const { data: visualizations = [] } = useVisualizations(queryId);
+  const { data: queryData } = useQueryDetails(queryId || "");
+  const visualizations = queryData?.visualizations || [];
   const executionIds = queryData?.executions || [];
-  const latestExecutionId =
-    executionIds.length > 0 ? executionIds[executionIds.length - 1] : null;
-  const { data: execution } = useLatestExecution(latestExecutionId);
+  const execution = executionIds.length > 0 ? executionIds[executionIds.length - 1] : null;
   const [mosaicLayout, setMosaicLayout] = useState<MosaicNode<string> | null>({
     direction: "row",
     splitPercentage: 20,
@@ -46,7 +41,7 @@ const QueriesLayout: React.FC = () => {
   const currentVisualization =
     visualizations.find((v) => v.id === visualizationId) || visualizations[0];
 
-  const handleVisualizationClick = (vizId: number) => {
+  const handleVisualizationClick = (vizId: string) => {
     if (vizId === currentVisualization?.id) return;
     router.replace(`/queries/${queryId}/${vizId}`);
   };
@@ -85,18 +80,14 @@ const QueriesLayout: React.FC = () => {
         }
 
         toolbarControls = visualizations.map((viz) => (
-          <button
+          <Button
             key={viz.id}
             onClick={() => handleVisualizationClick(viz.id)}
-            className={`px-4 py-2 rounded ${
-              viz.id === currentVisualization?.id
-                ? "bg-blue-600 text-white"
-                : "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
-            } hover:bg-blue-500 hover:text-white transition`}
+            variant="subtle"
             aria-pressed={viz.id === currentVisualization?.id}
           >
             {viz.name}
-          </button>
+          </Button>
         ));
         break;
       case "React-flow Overview":

@@ -1,5 +1,5 @@
 import React from "react";
-import { Column } from "@/types";
+import { Column } from "@/types/supabase";
 import { Icon } from "@/components/ui/Icon";
 
 interface TableHeaderProps {
@@ -47,7 +47,7 @@ export const TableHeader: React.FC<TableHeaderProps> = ({
                 className="sticky top-0 bg-white dark:bg-black"
               >
                 <div className="flex flex-row justify-between items-center gap-1 p-2">
-                  <p>{column.label}</p>
+                  <p>{column.label || column.id}</p>
                   {column && (
                     <span style={{ marginLeft: "5px" }}>
                       {renderSortIcon(column.id)}

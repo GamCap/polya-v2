@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Column } from "@/types";
+import { Column } from "@/types/supabase";
 import { Button } from "@/components/ui/Button";
 import { TextInput } from "@/components/ui/TextInput";
 

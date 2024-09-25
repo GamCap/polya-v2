@@ -1,4 +1,4 @@
-import { FormatterOptions } from "@/types/column";
+import { FormatterOptions } from "@/types/supabase";
 //TODO: use formatter in the Preview component to format the data, refine the formatter function
 export const formatValue = (
   value: any,
@@ -6,17 +6,11 @@ export const formatValue = (
 ): string => {
   if (!formatterOptions) return String(value);
 
-  const { regexPattern, numberFormat, dateFormat, customFormatter } =
-    formatterOptions;
+  const { regexPattern, dateFormat, customFormatter } = formatterOptions;
 
   if (regexPattern) {
     const regex = new RegExp(regexPattern);
     return regex.test(value) ? value : "Invalid";
-  }
-
-  if (numberFormat) {
-    const formatter = new Intl.NumberFormat(undefined, numberFormat);
-    return formatter.format(Number(value));
   }
 
   if (dateFormat) {

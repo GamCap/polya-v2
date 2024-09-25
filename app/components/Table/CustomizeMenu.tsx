@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import { Button } from "@/components/ui/Button";
 import { TextInput } from "@/components/ui/TextInput";
 import { Checkbox } from "@/components/ui/Checkbox";
-import { Column } from "@/types";
+import { Column } from "@/types/supabase";
 
 interface CustomizeMenuProps {
   columns: Column[];
@@ -209,7 +209,7 @@ export const CustomizeMenu: React.FC<CustomizeMenuProps> = ({
                 >
                   <div className="flex items-center gap-2">
                     <Checkbox
-                      label={column.label}
+                      label={column.label || column.id}
                       checked={visibleColumns.includes(column.id)}
                       onChange={() =>
                         handleVisibilityChange(
