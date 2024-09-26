@@ -27,7 +27,7 @@ const HomePage: React.FC = () => {
       }
       </div>  
       
-      <Button variant="subtle">
+      <Button variant="subtle" size="medium">
         <Link href="/queries">Create New Query</Link>
       </Button>
     </div>

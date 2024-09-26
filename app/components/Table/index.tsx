@@ -115,7 +115,7 @@ export const Table: React.FC<TableProps> = ({
   );
 
   return (
-    <div className="relative w-full h-full flex flex-col gap-2 dark:text-neutral-300 text-neutral-800">
+    <div className="relative w-full h-full flex flex-col gap-2 dark:text-neutral-300 text-neutral-800 text-basic-10-auto-regular">
       <div className="flex flex-row justify-between items-center">
         <TableSearch onSearch={handleSearch} />
         <div className="flex flex-row gap-2 items-center justify-center">

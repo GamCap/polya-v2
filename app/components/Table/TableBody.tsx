@@ -13,7 +13,7 @@ export const TableBody: React.FC<TableBodyProps> = ({
   visibleColumns,
 }) => {
   return (
-    <tbody className="h-full overflow-y-auto text-basic-12-auto-regular">
+    <tbody className="h-full overflow-y-auto">
       {data.map((item, index) => (
         <TableRow
           key={index}

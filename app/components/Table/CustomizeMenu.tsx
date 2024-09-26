@@ -199,7 +199,7 @@ export const CustomizeMenu: React.FC<CustomizeMenuProps> = ({
         <div className="absolute inset-0 bg-white dark:bg-black bg-opacity-50 dark:bg-opacity-50 flex justify-center items-center z-50">
           <div
             ref={modalRef}
-            className="bg-white dark:bg-[#2C2C2C] bg-opacity-10 dark:bg-opacity-20 backdrop-blur-sm rounded-md text-basic-14-auto-regular w-fit z-50 max-h-full flex flex-col"
+            className="bg-white dark:bg-[#2C2C2C] bg-opacity-10 dark:bg-opacity-20 backdrop-blur-sm rounded-md text-basic-10-auto-regular w-fit z-50 max-h-full flex flex-col"
           >
             <div className="flex flex-col grow min-h-0 overflow-y-auto scrollbar">
               {columns.map((column) => (
@@ -228,7 +228,7 @@ export const CustomizeMenu: React.FC<CustomizeMenuProps> = ({
               ))}
             </div>
             <div className="py-1 flex justify-end">
-              <Button variant="subtle" onClick={applyFilters} size="medium">
+              <Button variant="subtle" onClick={applyFilters} size="small">
                 Apply Filters
               </Button>
             </div>

@@ -69,7 +69,7 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
 
           {leftSymbol && (
             <div className="pointer-events-none flex items-center pl-3">
-              <Text className="text-basic-12-auto-regular text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-600 disabled:placeholder:text-neutral-400 text-ellipsis opacity-40 whitespace-nowrap">
+              <Text className="text-basic-10-auto-regular text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-600 disabled:placeholder:text-neutral-400 text-ellipsis opacity-40 whitespace-nowrap">
                 {leftSymbol}
               </Text>
             </div>
@@ -81,7 +81,7 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
               "block w-full rounded-sm pr-3 border-none focus:border-none focus:outline-none focus:ring-0 disabled:cursor-not-allowed transition-all ease-linear duration-200",
               "text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-600 disabled:placeholder:text-neutral-400 text-ellipsis",
               "dark:bg-black",
-              "text-basic-12-auto-regular",
+              "text-basic-10-auto-regular",
               variantClasses[variant].input,
               inputClassName
             )}
@@ -100,7 +100,7 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
 
           {rightSymbol && (
             <div className="pointer-events-none flex items-center pr-3">
-              <Text className="text-basic-12-auto-regular text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-600 disabled:placeholder:text-neutral-400 text-ellipsis">
+              <Text className="text-basic-10-auto-regular text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-600 disabled:placeholder:text-neutral-400 text-ellipsis">
                 {rightSymbol}
               </Text>
             </div>

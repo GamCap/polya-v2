@@ -36,7 +36,7 @@ export const TableHeader: React.FC<TableHeaderProps> = ({
 
   return (
     <thead>
-      <tr className="border-b border-neutral-200 dark:border-neutral-900 text-title-12-17-medium">
+      <tr className="border-b border-neutral-200 dark:border-neutral-900 font-medium">
         {columns.map((column) => {
           if (visibleColumns.includes(column.id)) {
             return (

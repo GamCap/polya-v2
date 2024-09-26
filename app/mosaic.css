@@ -20,6 +20,7 @@
   .mosaic-drop-target {
     .drop-target-container .drop-target {
       background: none;
+      @apply rounded-md border border-green-primary dark:border-green-primary-dark bg-black/10 dark:bg-white/20;
     }
   }
 
@@ -40,7 +41,7 @@
     }
 
     .mosaic-window-title {
-      @apply text-black hover:text-green-primary hover:bg-black/10 dark:text-white dark:hover:text-green-primary-dark dark:hover:bg-white/10;
+      @apply text-black hover:text-green-primary hover:bg-black/10 dark:text-white dark:hover:text-green-primary-dark dark:hover:bg-white/10 text-title-12-auto-regular;
     }
 
     .mosaic-window-controls {

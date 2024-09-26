@@ -23,7 +23,7 @@ export const TablePagination: React.FC<TablePaginationProps> = ({
         onClick={() => onPageChange(currentPage - 1)}
         className="enabled:hover:text-green-primary enabled:dark:hover:text-green-primary-dark disabled:text-neutral-400 disabled:dark:text-neutral-700"
       >
-        <Icon name="ExpandLeft" className="w-[18px] h-[18px]" />
+        <Icon name="ExpandLeft" className="w-[16px] h-[16px]" />
       </button>
       <span className="flex flex-row gap-1">
         {Array.from({ length: totalPages }, (_, i) => i + 1)
@@ -61,7 +61,7 @@ export const TablePagination: React.FC<TablePaginationProps> = ({
                 key={page}
                 onClick={() => onPageChange(page)}
                 className={
-                  "px-[10px] py-[3px] rounded-sm text-center transition-colors duration-200 text-basic-12-auto-regular" +
+                  "px-[10px] py-[3px] rounded-sm text-center transition-colors duration-200 text-basic-10-auto-regular" +
                   (page === currentPage
                     ? " bg-green-primary dark:bg-green-primary-dark text-white dark:text-black cursor-not-allowed"
                     : "  hover:bg-neutral-200 hover:dark:bg-neutral-900")
@@ -77,7 +77,7 @@ export const TablePagination: React.FC<TablePaginationProps> = ({
         onClick={() => onPageChange(currentPage + 1)}
         className="enabled:hover:text-green-primary enabled:dark:hover:text-green-primary-dark disabled:text-neutral-400 disabled:dark:text-neutral-700"
       >
-        <Icon name="ExpandLeft" className="rotate-180 w-[18px] h-[18px]" />
+        <Icon name="ExpandLeft" className="rotate-180 w-[16px] h-[16px]" />
       </button>
     </div>
   );

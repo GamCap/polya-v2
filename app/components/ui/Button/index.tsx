@@ -55,8 +55,8 @@ const onlyIconSizeClasses: Record<ButtonSize, string> = {
 };
 
 const buttonTextClasses: Record<ButtonSize, string> = {
-  xsmall: "text-basic-12-auto-medium",
-  small: "text-basic-12-auto-medium",
+  xsmall: "text-basic-10-auto-medium",
+  small: "text-basic-10-auto-medium",
   medium: "text-basic-12-auto-medium",
   large: "text-basic-16-auto-medium",
 };

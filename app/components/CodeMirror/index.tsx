@@ -9,6 +9,7 @@ import { useParams, useRouter } from "next/navigation";
 import { useQueryDetails } from "@/hooks/supabase/useQueryDetails";
 import { useCreateQuery } from "@/hooks/supabase/useCreateQuery";
 import { useUpdateQuery } from "@/hooks/supabase/useUpdateQuery";
+import { Button } from "../ui/Button";
 
 const CodeEditor: React.FC = () => {
   const { theme } = useTheme();
@@ -87,7 +88,7 @@ const CodeEditor: React.FC = () => {
         extensions={[sql()]}
         onChange={handleChange}
         height="100%"
-        className="scrollbar w-full h-full"
+        className="scrollbar w-full h-full text-title-12-auto-regular"
         theme={theme === "dark" ? "dark" : "light"}
         basicSetup={{
           lineNumbers: true,
@@ -109,13 +110,14 @@ interface EditorControlsProps {
 const EditorControls: React.FC<EditorControlsProps> = ({ onRun, loading }) => {
   return (
     <div className="flex flex-row gap-2 w-full justify-end bg-[#f5f5f5] dark:bg-[#282c34] border-t border-[#ddd] dark:border-none p-2">
-      <button
-        className={`btn btn-primary ${loading ? "opacity-50 cursor-not-allowed" : ""}`}
+      <Button
+        variant="subtle"
+        size="xsmall"
         onClick={onRun}
         disabled={loading}
       >
         {loading ? "Executing..." : "Run"}
-      </button>
+      </Button>
     </div>
   );
 };
