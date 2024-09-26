@@ -8,6 +8,7 @@ import "react-grid-layout/css/styles.css";
 import "react-mosaic-component/react-mosaic-component.css";
 import "react-resizable/css/styles.css";
 import "./globals.css";
+import "./mosaic.css";
 import ReactQueryProvider from "./providers/reactQueryProvider";
 
 const inter = Inter({ subsets: ["latin"] });
