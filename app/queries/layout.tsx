@@ -60,7 +60,7 @@ const QueriesLayout: React.FC = () => {
         break;
       case "Data Sources":
         content = (
-          <div className="p-4">
+          <div className="p-4 text-basic-10-auto-regular text-black dark:text-white">
             <p>Data sources content</p>
           </div>
         );
@@ -81,6 +81,7 @@ const QueriesLayout: React.FC = () => {
 
         toolbarControls = visualizations.map((viz) => (
           <Button
+            size="xsmall"
             key={viz.id}
             onClick={() => handleVisualizationClick(viz.id)}
             variant="subtle"
@@ -92,14 +93,14 @@ const QueriesLayout: React.FC = () => {
         break;
       case "React-flow Overview":
         content = (
-          <div className="p-4">
+          <div className="p-4 text-basic-10-auto-regular text-black dark:text-white">
             <p>React-flow Overview content</p>
           </div>
         );
         break;
       default:
         content = (
-          <div className="p-4">
+          <div className="p-4 text-basic-10-auto-regular text-black dark:text-white">
             <p>Your content for {id} goes here.</p>
           </div>
         );
@@ -120,6 +121,7 @@ const QueriesLayout: React.FC = () => {
   return (
     <div className="h-screen">
       <Mosaic<string>
+        className="myMosaicLayout"
         renderTile={renderTile}
         value={mosaicLayout}
         onChange={handleMosaicChange}

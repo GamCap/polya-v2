@@ -1,4 +1,4 @@
-.mosaic.mosaic-blueprint-theme {
+.mosaic.myMosaicLayout {
   background: none;
 
   .mosaic-zero-state {
@@ -28,6 +28,7 @@
   .mosaic-preview {
     @apply rounded-md;
     .mosaic-window-toolbar {
+      background: none;
       @apply bg-white border-b border-neutral-500 dark:bg-black dark:border-neutral-800;
 
       &.draggable:hover {
