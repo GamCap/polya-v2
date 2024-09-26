@@ -20,13 +20,12 @@
   .mosaic-drop-target {
     .drop-target-container .drop-target {
       background: none;
-      @apply rounded-md bg-neutral-500/20 border border-green-primary dark:border-green-primary-dark transition-opacity duration-100;
     }
   }
 
   .mosaic-window,
   .mosaic-preview {
-    @apply rounded-md;
+    @apply rounded-md text-black dark:text-white bg-white dark:bg-black;
     .mosaic-window-toolbar {
       background: none;
       @apply bg-white border-b border-neutral-500 dark:bg-black dark:border-neutral-800;
