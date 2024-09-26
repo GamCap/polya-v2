@@ -3,7 +3,9 @@
 import React, { useState, useEffect } from "react";
 import ReactCodeMirror from "@uiw/react-codemirror";
 import { sql } from "@codemirror/lang-sql";
-import { ViewUpdate } from "@codemirror/view";
+import { EditorView, ViewUpdate, keymap } from "@codemirror/view";
+import { acceptCompletion, completionStatus } from '@codemirror/autocomplete';
+import {indentMore, indentLess} from "@codemirror/commands"
 import { useTheme } from "next-themes";
 import { useParams, useRouter } from "next/navigation";
 import { useQueryDetails } from "@/hooks/supabase/useQueryDetails";
@@ -81,11 +83,29 @@ const CodeEditor: React.FC = () => {
     }
   };
 
+  const customKeymap = keymap.of([
+    {
+      key: 'Tab',
+      shift: indentLess,
+      run: (view: EditorView) => {
+        //if the completion is active, accept the completion, otherwise insert a tab
+        if (completionStatus(view.state) === "active") {
+          acceptCompletion(view);
+        } else {
+         indentMore(view);
+        }
+        return true;
+      }
+
+    },
+  ]);
+
   return (
     <div className="flex flex-col w-full h-full">
       <ReactCodeMirror
+        indentWithTab={false}
         value={queryText}
-        extensions={[sql()]}
+        extensions={[sql(), customKeymap]}
         onChange={handleChange}
         height="100%"
         className="scrollbar w-full h-full text-title-12-auto-regular"
