@@ -18,14 +18,14 @@ export type Database = {
           excess_blob_gas: number | null;
           gas_limit: number | null;
           gas_used: number | null;
-          hash: string;
+          hash: string | null;
           miner: string | null;
           nonce: string | null;
           number: number;
           parent_beacon_block_root: string | null;
           parent_hash: string | null;
           size: number | null;
-          time: string;
+          time: string | null;
           total_difficulty: number | null;
         };
         Insert: {
@@ -36,14 +36,14 @@ export type Database = {
           excess_blob_gas?: number | null;
           gas_limit?: number | null;
           gas_used?: number | null;
-          hash: string;
+          hash?: string | null;
           miner?: string | null;
           nonce?: string | null;
           number: number;
           parent_beacon_block_root?: string | null;
           parent_hash?: string | null;
           size?: number | null;
-          time: string;
+          time?: string | null;
           total_difficulty?: number | null;
         };
         Update: {
@@ -54,15 +54,39 @@ export type Database = {
           excess_blob_gas?: number | null;
           gas_limit?: number | null;
           gas_used?: number | null;
-          hash?: string;
+          hash?: string | null;
           miner?: string | null;
           nonce?: string | null;
           number?: number;
           parent_beacon_block_root?: string | null;
           parent_hash?: string | null;
           size?: number | null;
-          time?: string;
+          time?: string | null;
           total_difficulty?: number | null;
+        };
+        Relationships: [];
+      };
+      metadata: {
+        Row: {
+          column_name: string;
+          metadata:
+            | Database["public"]["CompositeTypes"]["metadata_type"]
+            | null;
+          table_name: string;
+        };
+        Insert: {
+          column_name: string;
+          metadata?:
+            | Database["public"]["CompositeTypes"]["metadata_type"]
+            | null;
+          table_name: string;
+        };
+        Update: {
+          column_name?: string;
+          metadata?:
+            | Database["public"]["CompositeTypes"]["metadata_type"]
+            | null;
+          table_name?: string;
         };
         Relationships: [];
       };
@@ -82,125 +106,132 @@ export type Database = {
   };
   public: {
     Tables: {
-      Execution: {
+      executions: {
         Row: {
           executed_at: string;
           id: string;
           query_id: string;
-          result: Json;
+          result: Json | null;
           sql: string;
         };
         Insert: {
           executed_at?: string;
           id?: string;
           query_id: string;
-          result: Json;
+          result?: Json | null;
           sql: string;
         };
         Update: {
           executed_at?: string;
           id?: string;
           query_id?: string;
-          result?: Json;
+          result?: Json | null;
           sql?: string;
         };
         Relationships: [
           {
-            foreignKeyName: "Execution_query_id_fkey";
+            foreignKeyName: "executions_query_id_fkey";
             columns: ["query_id"];
             isOneToOne: false;
-            referencedRelation: "Query";
+            referencedRelation: "queries";
             referencedColumns: ["id"];
           }
         ];
       };
-      Query: {
+      queries: {
         Row: {
           created_at: string;
           id: string;
-          name: string | null;
-          owner: string;
+          name: string;
+          owner_id: string;
           query: string;
           updated_at: string;
         };
         Insert: {
           created_at?: string;
           id?: string;
-          name?: string | null;
-          owner: string;
+          name: string;
+          owner_id: string;
           query: string;
           updated_at?: string;
         };
         Update: {
           created_at?: string;
           id?: string;
-          name?: string | null;
-          owner?: string;
+          name?: string;
+          owner_id?: string;
           query?: string;
           updated_at?: string;
         };
         Relationships: [
           {
-            foreignKeyName: "Query_owner_fkey";
-            columns: ["owner"];
+            foreignKeyName: "queries_owner_id_fkey";
+            columns: ["owner_id"];
             isOneToOne: false;
-            referencedRelation: "User";
+            referencedRelation: "users";
             referencedColumns: ["id"];
           }
         ];
       };
-      User: {
+      users: {
         Row: {
           handle: string;
           id: string;
           name: string;
+          profile_image_url: string | null;
         };
         Insert: {
           handle: string;
           id?: string;
           name: string;
+          profile_image_url?: string | null;
         };
         Update: {
           handle?: string;
           id?: string;
           name?: string;
+          profile_image_url?: string | null;
         };
         Relationships: [];
       };
-      Visualization: {
+      visualizations: {
         Row: {
           created_at: string;
           description: string | null;
           id: string;
           name: string;
-          options: Json;
+          options: Database["public"]["CompositeTypes"]["table_options"] | null;
           query_id: string;
-          type: Database["public"]["Enums"]["visualization_type"];
+          type: Database["public"]["Enums"]["visualization_type_enum"];
         };
         Insert: {
           created_at?: string;
           description?: string | null;
           id?: string;
           name: string;
-          options: Json;
+          options?:
+            | Database["public"]["CompositeTypes"]["table_options"]
+            | null;
           query_id: string;
-          type: Database["public"]["Enums"]["visualization_type"];
+          type: Database["public"]["Enums"]["visualization_type_enum"];
         };
         Update: {
           created_at?: string;
           description?: string | null;
           id?: string;
           name?: string;
-          options?: Json;
+          options?:
+            | Database["public"]["CompositeTypes"]["table_options"]
+            | null;
           query_id?: string;
-          type?: Database["public"]["Enums"]["visualization_type"];
+          type?: Database["public"]["Enums"]["visualization_type_enum"];
         };
         Relationships: [
           {
-            foreignKeyName: "Visualization_query_id_fkey";
+            foreignKeyName: "visualizations_query_id_fkey";
             columns: ["query_id"];
             isOneToOne: false;
-            referencedRelation: "Query";
+            referencedRelation: "queries";
             referencedColumns: ["id"];
           }
         ];
@@ -237,6 +268,12 @@ export type Database = {
         };
         Returns: boolean;
       };
+      validate_metadata: {
+        Args: {
+          v_metadata: Json;
+        };
+        Returns: boolean;
+      };
       validate_table_options: {
         Args: {
           v_options: Json;
@@ -245,15 +282,15 @@ export type Database = {
       };
       validate_visualization_options: {
         Args: {
-          v_type: Database["public"]["Enums"]["visualization_type"];
+          v_type: Database["public"]["Enums"]["visualization_type_enum"];
           v_options: Json;
         };
         Returns: boolean;
       };
     };
     Enums: {
-      column_alignment: "left" | "center" | "right";
-      custom_formatter:
+      align_content_enum: "left" | "center" | "right";
+      custom_formatter_enum:
         | "shortDate"
         | "date"
         | "number"
@@ -263,11 +300,49 @@ export type Database = {
         | "currency"
         | "posNeg"
         | "email";
-      filter_type: "range" | "boolean" | "multi-select" | "date-range";
-      visualization_type: "table";
+      filter_type_enum: "range" | "boolean" | "multi-select" | "date-range";
+      sort_direction_enum: "asc" | "desc";
+      unit_enum: "timestamp" | "none" | "wei" | "date";
+      value_type_enum:
+        | "TIMESTAMPTZ"
+        | "BIGINT"
+        | "NUMERIC"
+        | "INTEGER"
+        | "TEXT"
+        | "DATE";
+      visualization_type_enum: "table" | "chart" | "graph" | "custom";
     };
     CompositeTypes: {
-      [_ in never]: never;
+      column_type: {
+        id: string | null;
+        label: string | null;
+        filterable: boolean | null;
+        align_content: Database["public"]["Enums"]["align_content_enum"] | null;
+        number_format: string | null;
+        formatter_options:
+          | Database["public"]["CompositeTypes"]["formatter_options"]
+          | null;
+        filter_type: Database["public"]["Enums"]["filter_type_enum"] | null;
+        options: string[] | null;
+        metadata: Database["public"]["CompositeTypes"]["metadata_type"] | null;
+      };
+      formatter_options: {
+        regex_pattern: string | null;
+        number_format: Json | null;
+        date_format: string | null;
+        custom_formatter:
+          | Database["public"]["Enums"]["custom_formatter_enum"]
+          | null;
+      };
+      metadata_type: {
+        unit: Database["public"]["Enums"]["unit_enum"] | null;
+        description: string | null;
+        value_type: Database["public"]["Enums"]["value_type_enum"] | null;
+      };
+      table_options: {
+        columns: Database["public"]["CompositeTypes"]["column_type"][] | null;
+        page_size: number | null;
+      };
     };
   };
 };

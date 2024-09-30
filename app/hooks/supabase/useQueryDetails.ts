@@ -7,15 +7,18 @@ export const useQueryDetails = (queryId: string) =>
   useQuery<QueryDetails, Error>({
     queryKey: ["queryDetails", queryId],
     queryFn: async () => {
+      if (!queryId) {
+        return Promise.reject(new Error("Query ID is required"));
+      }
       const supabase = supabaseBrowser();
       const { data, error } = await supabase
-        .from("Query")
+        .from("queries")
         .select(
           `
-        *,
-        visualizations:Visualization(*),
-        executions:Execution(*)
-      `
+            *,
+            visualizations (*),
+            executions (*)
+          `
         )
         .eq("id", queryId)
         .single();
@@ -35,7 +38,7 @@ export const useQueryDetails = (queryId: string) =>
           query: data.query,
           createdAt: data.created_at,
           updatedAt: data.updated_at,
-          owner: data.owner,
+          ownerId: data.owner_id,
           visualizations: data.visualizations.map((v: any) => ({
             id: v.id,
             queryId: v.query_id,

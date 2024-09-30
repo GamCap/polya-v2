@@ -46,7 +46,7 @@ export const TableHeader: React.FC<TableHeaderProps> = ({
                 style={{ cursor: column ? "pointer" : "default" }}
                 className="sticky top-0 bg-white dark:bg-black"
               >
-                <div className="flex flex-row justify-between items-center gap-1 p-2">
+                <div className="flex flex-row justify-between items-center gap-1 p-2 whitespace-nowrap">
                   <p>{column.label || column.id}</p>
                   {column && (
                     <span style={{ marginLeft: "5px" }}>

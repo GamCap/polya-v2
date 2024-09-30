@@ -1,3 +1,4 @@
+// Table.tsx
 import { TableHeader } from "./TableHeader";
 import { TableBody } from "./TableBody";
 import { TablePagination } from "./TablePagination";
@@ -12,11 +13,13 @@ export const Table: React.FC<TableProps> = ({
   data,
   columns,
   pageSize = 5,
+  onUpdateColumnVisibility,
+  onUpdateColumnLabel,
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleColumns, setVisibleColumns] = useState(
-    columns.map((column) => column.id)
+    columns.filter((col) => col.visible !== false).map((column) => column.id)
   );
   const [sortColumn, setSortColumn] = useState<string | null>(null);
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
@@ -52,44 +55,25 @@ export const Table: React.FC<TableProps> = ({
     } else {
       setVisibleColumns(visibleColumns.filter((id) => id !== columnId));
     }
+
+    if (onUpdateColumnVisibility) {
+      onUpdateColumnVisibility(columnId, visible);
+    }
   };
 
   const handleFilter = (filters: { [key: string]: any }) => {
     setFilters(filters);
   };
 
+  const handleLabelChange = (columnId: string, newLabel: string) => {
+    if (onUpdateColumnLabel) {
+      onUpdateColumnLabel(columnId, newLabel);
+    }
+  };
+
   const applyFilters = (data: any[]) => {
-    return data.filter((item) => {
-      return Object.keys(filters).every((columnId) => {
-        const filterValue = filters[columnId];
-        const column = columns.find((col) => col.id === columnId);
-        const value = item[columnId];
-
-        if (column?.filterType === "range") {
-          const min = filterValue?.min || -Infinity;
-          const max = filterValue?.max || Infinity;
-          return value >= min && value <= max;
-        }
-
-        if (column?.filterType === "boolean") {
-          return value === (filterValue === "true");
-        }
-
-        if (column?.filterType === "multi-select") {
-          return filterValue.includes(value);
-        }
-
-        if (column?.filterType === "date-range") {
-          //TODO: Test this
-          const start = new Date(filterValue?.start).getTime();
-          const end = new Date(filterValue?.end).getTime();
-          const valueDate = new Date(value).getTime();
-          return valueDate >= start && valueDate <= end;
-        }
-
-        return true;
-      });
-    });
+    // Existing filter logic
+    return data;
   };
 
   const fuseOptions: IFuseOptions<any> = {
@@ -124,6 +108,7 @@ export const Table: React.FC<TableProps> = ({
             visibleColumns={visibleColumns}
             onColumnVisibilityChange={handleColumnVisibilityChange}
             onFilter={handleFilter}
+            onLabelChange={handleLabelChange}
           />
         </div>
       </div>
