@@ -1,9 +1,10 @@
 import { Column } from "@/types/supabase";
 
-interface TableProps {
+export interface TableProps {
   data: any[];
   columns: Column[];
   pageSize?: number;
+  onUpdateColumnVisibility?: (columnId: string, visible: boolean) => void;
+  onUpdateColumnLabel?: (columnId: string, newLabel: string) => void;
 }
-
 export { TableProps };

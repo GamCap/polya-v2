@@ -12,11 +12,11 @@ export const useQueriesList = () =>
     queryKey: ["queriesList"],
     queryFn: async () => {
       const supabase = supabaseBrowser();
-      const { data, error } = await supabase.from("Query").select(
+      const { data, error } = await supabase.from("queries").select(
         `
-        *,
-        visualizations:Visualization(id)
-      `
+            *,
+            visualizations (id)
+          `
       );
 
       if (error) {
@@ -33,7 +33,7 @@ export const useQueriesList = () =>
         query: query.query,
         createdAt: query.created_at,
         updatedAt: query.updated_at,
-        owner: query.owner,
+        ownerId: query.owner_id,
         firstVisualizationId: query.visualizations?.[0]?.id || null,
       }));
 

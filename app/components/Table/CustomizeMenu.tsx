@@ -1,6 +1,6 @@
+// CustomizeMenu.tsx
 "use client";
-import { useEffect, useState, useRef } from "react";
-
+import React, { useEffect, useState, useRef } from "react";
 import { Button } from "@/components/ui/Button";
 import { TextInput } from "@/components/ui/TextInput";
 import { Checkbox } from "@/components/ui/Checkbox";
@@ -11,6 +11,7 @@ interface CustomizeMenuProps {
   visibleColumns: string[];
   onFilter: (filters: { [key: string]: any }) => void;
   onColumnVisibilityChange: (columnId: string, visible: boolean) => void;
+  onLabelChange?: (columnId: string, newLabel: string) => void;
 }
 
 export const CustomizeMenu: React.FC<CustomizeMenuProps> = ({
@@ -18,6 +19,7 @@ export const CustomizeMenu: React.FC<CustomizeMenuProps> = ({
   visibleColumns,
   onFilter,
   onColumnVisibilityChange,
+  onLabelChange,
 }) => {
   const [filters, setFilters] = useState<{ [key: string]: any }>({});
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +38,6 @@ export const CustomizeMenu: React.FC<CustomizeMenuProps> = ({
 
   const handleVisibilityChange = (columnId: string, visible: boolean) => {
     if (!visible) {
-      // If the column is hidden, remove its filter
       const updatedFilters = { ...filters };
       delete updatedFilters[columnId];
       setFilters(updatedFilters);
@@ -45,9 +46,15 @@ export const CustomizeMenu: React.FC<CustomizeMenuProps> = ({
     onColumnVisibilityChange(columnId, visible);
   };
 
+  const handleLabelChangeLocal = (columnId: string, newLabel: string) => {
+    if (onLabelChange) {
+      onLabelChange(columnId, newLabel);
+    }
+  };
+
   const handleClickOutside = (e: MouseEvent) => {
     if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
-      setIsOpen(false); // Close modal if clicked outside
+      setIsOpen(false);
     }
   };
 
@@ -176,19 +183,9 @@ export const CustomizeMenu: React.FC<CustomizeMenuProps> = ({
           </div>
         );
       default:
-        return null;
     }
+    return null;
   };
-
-  useEffect(() => {
-    const initialFilters: { [key: string]: any } = {};
-    columns.forEach((column) => {
-      if (column.filterType === "multi-select" && column.options) {
-        initialFilters[column.id] = column.options;
-      }
-    });
-    setFilters(initialFilters);
-  }, [columns]);
 
   return (
     <div>
@@ -219,6 +216,14 @@ export const CustomizeMenu: React.FC<CustomizeMenuProps> = ({
                       }
                     />
                   </div>
+                  <TextInput
+                    value={column.label || column.id}
+                    onChange={(e) =>
+                      handleLabelChangeLocal(column.id, e.target.value)
+                    }
+                    placeholder="Column Label"
+                    isDisabled={!visibleColumns.includes(column.id)}
+                  />
                   {column.filterable && (
                     <div className="w-full h-12 relative">
                       {renderInputField(column)}

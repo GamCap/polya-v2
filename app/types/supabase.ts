@@ -20,6 +20,21 @@ export const FilterType = z.enum([
   "multi-select",
   "date-range",
 ]);
+export const UnitEnum = z.enum(["timestamp", "none", "wei", "date"]);
+export const ValueTypeEnum = z.enum([
+  "TIMESTAMPTZ",
+  "BIGINT",
+  "NUMERIC",
+  "INTEGER",
+  "TEXT",
+  "DATE",
+]);
+
+export const MetadataSchema = z.object({
+  unit: UnitEnum,
+  description: z.string().optional(),
+  value_type: ValueTypeEnum,
+});
 
 export const FormatterOptionsSchema = z.object({
   regexPattern: z.string().optional(),
@@ -37,6 +52,7 @@ export const ColumnSchema = z.object({
   formatterOptions: FormatterOptionsSchema.optional(),
   filterType: FilterType.optional(),
   options: z.array(z.string()).optional(),
+  metadata: MetadataSchema.optional(),
 });
 
 export const TableOptionsSchema = z.object({
@@ -78,7 +94,7 @@ export const QuerySchema = z.object({
   query: z.string(),
   createdAt: z.string(),
   updatedAt: z.string(),
-  owner: z.string(),
+  ownerId: z.string(),
 });
 
 export const QueryDetailsSchema = QuerySchema.extend({
@@ -94,3 +110,6 @@ export type Execution = z.infer<typeof ExecutionSchema>;
 export type Query = z.infer<typeof QuerySchema>;
 export type QueryDetails = z.infer<typeof QueryDetailsSchema>;
 export type FormatterOptions = z.infer<typeof FormatterOptionsSchema>;
+export type Metadata = z.infer<typeof MetadataSchema>;
+export type UnitEnum = z.infer<typeof UnitEnum>;
+export type ValueTypeEnum = z.infer<typeof ValueTypeEnum>;

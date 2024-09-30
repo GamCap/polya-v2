@@ -4,8 +4,8 @@ import React, { useState, useEffect } from "react";
 import ReactCodeMirror from "@uiw/react-codemirror";
 import { sql } from "@codemirror/lang-sql";
 import { EditorView, ViewUpdate, keymap } from "@codemirror/view";
-import { acceptCompletion, completionStatus } from '@codemirror/autocomplete';
-import {indentMore, indentLess} from "@codemirror/commands"
+import { acceptCompletion, completionStatus } from "@codemirror/autocomplete";
+import { indentMore, indentLess } from "@codemirror/commands";
 import { useTheme } from "next-themes";
 import { useParams, useRouter } from "next/navigation";
 import { useQueryDetails } from "@/hooks/supabase/useQueryDetails";
@@ -18,7 +18,7 @@ const CodeEditor: React.FC = () => {
   const params = useParams();
   const router = useRouter();
 
-  const queryId = params.queryId ? params.queryId as string : null;
+  const queryId = params.queryId ? (params.queryId as string) : null;
 
   const [queryText, setQueryText] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
@@ -49,7 +49,7 @@ const CodeEditor: React.FC = () => {
     try {
       if (!queryId) {
         const data = await createQueryMutation.mutateAsync({
-          userId: "1b415c6a-277f-41f9-92ae-dcc76d9c961d",
+          userId: "6d937336-daf2-4412-9949-c3b59ef73d3a",
           query: queryText,
         });
 
@@ -63,7 +63,6 @@ const CodeEditor: React.FC = () => {
           queryId,
           query: queryText,
         });
-
 
         if (!updateData.execution_id) {
           throw new Error("Failed to create execution.");
@@ -85,18 +84,17 @@ const CodeEditor: React.FC = () => {
 
   const customKeymap = keymap.of([
     {
-      key: 'Tab',
+      key: "Tab",
       shift: indentLess,
       run: (view: EditorView) => {
         //if the completion is active, accept the completion, otherwise insert a tab
         if (completionStatus(view.state) === "active") {
           acceptCompletion(view);
         } else {
-         indentMore(view);
+          indentMore(view);
         }
         return true;
-      }
-
+      },
     },
   ]);
 
@@ -130,12 +128,7 @@ interface EditorControlsProps {
 const EditorControls: React.FC<EditorControlsProps> = ({ onRun, loading }) => {
   return (
     <div className="flex flex-row gap-2 w-full justify-end bg-[#f5f5f5] dark:bg-[#282c34] border-t border-[#ddd] dark:border-none p-2">
-      <Button
-        variant="subtle"
-        size="xsmall"
-        onClick={onRun}
-        disabled={loading}
-      >
+      <Button variant="subtle" size="xsmall" onClick={onRun} disabled={loading}>
         {loading ? "Executing..." : "Run"}
       </Button>
     </div>

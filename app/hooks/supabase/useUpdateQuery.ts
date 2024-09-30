@@ -1,4 +1,4 @@
-"ise client";
+"use client";
 import { supabaseBrowser } from "@/supabase/browser";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
@@ -9,13 +9,10 @@ interface UpdateQueryInput {
 
 export const useUpdateQuery = () => {
   const queryClient = useQueryClient();
-
-  //update_query_and_create_execution
+  const supabase = supabaseBrowser();
 
   return useMutation({
     mutationFn: async ({ queryId, query }: UpdateQueryInput) => {
-      console.log("queryId", queryId);
-      const supabase = supabaseBrowser();
       const { data, error } = await supabase.rpc(
         "update_query_and_create_execution",
         {
@@ -31,9 +28,9 @@ export const useUpdateQuery = () => {
       return data[0];
     },
 
-    onSuccess: ({ query_id }) => {
+    onSuccess: (_, { queryId }) => {
       queryClient.invalidateQueries({ queryKey: ["queriesList"] });
-      queryClient.invalidateQueries({ queryKey: ["queryDetails", query_id] });
+      queryClient.invalidateQueries({ queryKey: ["queryDetails", queryId] });
     },
   });
 };
