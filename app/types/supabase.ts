@@ -31,9 +31,9 @@ export const ValueTypeEnum = z.enum([
 ]);
 
 export const MetadataSchema = z.object({
-  unit: UnitEnum,
+  unit: UnitEnum.optional(),
   description: z.string().optional(),
-  value_type: ValueTypeEnum,
+  value_type: ValueTypeEnum.optional(),
 });
 
 export const FormatterOptionsSchema = z.object({
@@ -102,6 +102,21 @@ export const QueryDetailsSchema = QuerySchema.extend({
   executions: z.array(ExecutionSchema),
 });
 
+export const TableColumnSchema = z.object({
+  column_name: z.string(),
+  metadata: MetadataSchema, // Referencing your existing MetadataSchema
+});
+
+export const GroupedTableSchema = z.object({
+  table_name: z.string(),
+  columns: z.array(TableColumnSchema),
+});
+
+export const MetadataQueryResultSchema = z.array(GroupedTableSchema);
+
+export type GroupedMetadataQueryResult = z.infer<
+  typeof MetadataQueryResultSchema
+>;
 export type VisualizationType = z.infer<typeof VisualizationType>;
 export type Column = z.infer<typeof ColumnSchema>;
 export type TableOptions = z.infer<typeof TableOptionsSchema>;

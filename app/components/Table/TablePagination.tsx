@@ -17,7 +17,7 @@ export const TablePagination: React.FC<TablePaginationProps> = ({
   const totalPages = Math.ceil(totalCount / pageSize);
 
   return (
-    <div className=" flex flex-row items-center w-full justify-center p-2">
+    <div className=" flex flex-row items-center justify-center p-2">
       <button
         disabled={currentPage <= 1}
         onClick={() => onPageChange(currentPage - 1)}

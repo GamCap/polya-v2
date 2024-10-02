@@ -101,16 +101,7 @@ export const Table: React.FC<TableProps> = ({
   return (
     <div className="relative w-full h-full flex flex-col gap-2 dark:text-neutral-300 text-neutral-800 text-basic-10-auto-regular">
       <div className="flex flex-row justify-between items-center">
-        <TableSearch onSearch={handleSearch} />
-        <div className="flex flex-row gap-2 items-center justify-center">
-          <CustomizeMenu
-            columns={columns}
-            visibleColumns={visibleColumns}
-            onColumnVisibilityChange={handleColumnVisibilityChange}
-            onFilter={handleFilter}
-            onLabelChange={handleLabelChange}
-          />
-        </div>
+        <div className="flex flex-row gap-2 items-center justify-center"></div>
       </div>
       <div className="w-full h-full flex-1 overflow-y-scroll scrollbar">
         <table className="w-full">
@@ -128,7 +119,15 @@ export const Table: React.FC<TableProps> = ({
           />
         </table>
       </div>
-      <div className="shrink-0">
+      <div className="shrink-0 flex flex-row gap-2 items-center justify-start">
+        <CustomizeMenu
+          columns={columns}
+          visibleColumns={visibleColumns}
+          onColumnVisibilityChange={handleColumnVisibilityChange}
+          onFilter={handleFilter}
+          onLabelChange={handleLabelChange}
+        />
+        <TableSearch onSearch={handleSearch} />
         <TablePagination
           currentPage={currentPage}
           pageSize={pageSize}
