@@ -83,9 +83,12 @@ export const CustomizeMenu: React.FC<CustomizeMenuProps> = ({
 
   return (
     <div>
-      <Button variant="active" size="small" onClick={() => setIsOpen(true)}>
-        Customize
-      </Button>
+      <Button
+        variant="subtle"
+        size="small"
+        iconName="Customize"
+        onClick={() => setIsOpen(true)}
+      />
       {isOpen && (
         <div className="absolute inset-0 bg-white dark:bg-black bg-opacity-50 dark:bg-opacity-50 flex justify-center items-center z-50">
           <div

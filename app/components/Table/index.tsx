@@ -83,7 +83,9 @@ export const Table: React.FC<TableProps> = ({
   };
 
   const applyFilters = (data: any[]) => {
-    // Existing filter logic
+    //TODO: Implement filtering for now just return the data
+    //look into Column.filterType and Column.options for filtering
+    //filters should be seperate from customize menu, and should be applied to the data locally
     return data;
   };
 
@@ -131,6 +133,15 @@ export const Table: React.FC<TableProps> = ({
         </table>
       </div>
       <div className="shrink-0 flex flex-row gap-2 items-center justify-start">
+        <div className="flex-grow">
+          <TablePagination
+            currentPage={currentPage}
+            pageSize={pageSize}
+            totalCount={searchedData.length}
+            onPageChange={handlePageChange}
+          />
+        </div>
+        <TableSearch onSearch={handleSearch} />
         <CustomizeMenu
           columns={columns}
           visibleColumns={visibleColumns}
@@ -138,13 +149,6 @@ export const Table: React.FC<TableProps> = ({
           onFilter={handleFilter}
           onLabelChange={handleLabelChange}
           onFormatterChange={handleUpdateColumnFormatter}
-        />
-        <TableSearch onSearch={handleSearch} />
-        <TablePagination
-          currentPage={currentPage}
-          pageSize={pageSize}
-          totalCount={searchedData.length}
-          onPageChange={handlePageChange}
         />
       </div>
     </div>

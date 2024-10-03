@@ -17,6 +17,7 @@ export const IconMap: Record<
   Copy: lazy(() => import("./subComponents/Basic/Copy.jsx")),
   Explore: lazy(() => import("./subComponents/Basic/Explore.jsx")),
   Cross: lazy(() => import("./subComponents/Basic/Cross.jsx")),
+  Customize: lazy(() => import("./subComponents/Basic/Customize.jsx")),
 };
 
 export type IconName =
@@ -32,4 +33,5 @@ export type IconName =
   | "Layout"
   | "Copy"
   | "Explore"
-  | "Cross";
+  | "Cross"
+  | "Customize";
