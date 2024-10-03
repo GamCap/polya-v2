@@ -8,6 +8,7 @@ import { sortData } from "./tableUtils";
 import Fuse, { IFuseOptions } from "fuse.js";
 import { TableProps } from "./types";
 import { CustomizeMenu } from "./CustomizeMenu";
+import { CustomFormatterType } from "@/types/supabase";
 
 export const Table: React.FC<TableProps> = ({
   data,
@@ -15,6 +16,7 @@ export const Table: React.FC<TableProps> = ({
   pageSize = 5,
   onUpdateColumnVisibility,
   onUpdateColumnLabel,
+  onUpdateColumnFormatter,
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState("");
@@ -36,6 +38,15 @@ export const Table: React.FC<TableProps> = ({
     } else {
       setSortColumn(columnId);
       setSortDirection("asc");
+    }
+  };
+
+  const handleUpdateColumnFormatter = (
+    columnId: string,
+    newFormatter?: CustomFormatterType
+  ) => {
+    if (onUpdateColumnFormatter) {
+      onUpdateColumnFormatter(columnId, newFormatter);
     }
   };
 
@@ -72,7 +83,9 @@ export const Table: React.FC<TableProps> = ({
   };
 
   const applyFilters = (data: any[]) => {
-    // Existing filter logic
+    //TODO: Implement filtering for now just return the data
+    //look into Column.filterType and Column.options for filtering
+    //filters should be seperate from customize menu, and should be applied to the data locally
     return data;
   };
 
@@ -101,16 +114,7 @@ export const Table: React.FC<TableProps> = ({
   return (
     <div className="relative w-full h-full flex flex-col gap-2 dark:text-neutral-300 text-neutral-800 text-basic-10-auto-regular">
       <div className="flex flex-row justify-between items-center">
-        <TableSearch onSearch={handleSearch} />
-        <div className="flex flex-row gap-2 items-center justify-center">
-          <CustomizeMenu
-            columns={columns}
-            visibleColumns={visibleColumns}
-            onColumnVisibilityChange={handleColumnVisibilityChange}
-            onFilter={handleFilter}
-            onLabelChange={handleLabelChange}
-          />
-        </div>
+        <div className="flex flex-row gap-2 items-center justify-center"></div>
       </div>
       <div className="w-full h-full flex-1 overflow-y-scroll scrollbar">
         <table className="w-full">
@@ -128,12 +132,23 @@ export const Table: React.FC<TableProps> = ({
           />
         </table>
       </div>
-      <div className="shrink-0">
-        <TablePagination
-          currentPage={currentPage}
-          pageSize={pageSize}
-          totalCount={searchedData.length}
-          onPageChange={handlePageChange}
+      <div className="shrink-0 flex flex-row gap-2 items-center justify-start">
+        <div className="flex-grow">
+          <TablePagination
+            currentPage={currentPage}
+            pageSize={pageSize}
+            totalCount={searchedData.length}
+            onPageChange={handlePageChange}
+          />
+        </div>
+        <TableSearch onSearch={handleSearch} />
+        <CustomizeMenu
+          columns={columns}
+          visibleColumns={visibleColumns}
+          onColumnVisibilityChange={handleColumnVisibilityChange}
+          onFilter={handleFilter}
+          onLabelChange={handleLabelChange}
+          onFormatterChange={handleUpdateColumnFormatter}
         />
       </div>
     </div>
