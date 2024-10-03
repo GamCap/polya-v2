@@ -8,6 +8,7 @@ import { sortData } from "./tableUtils";
 import Fuse, { IFuseOptions } from "fuse.js";
 import { TableProps } from "./types";
 import { CustomizeMenu } from "./CustomizeMenu";
+import { CustomFormatterType } from "@/types/supabase";
 
 export const Table: React.FC<TableProps> = ({
   data,
@@ -15,6 +16,7 @@ export const Table: React.FC<TableProps> = ({
   pageSize = 5,
   onUpdateColumnVisibility,
   onUpdateColumnLabel,
+  onUpdateColumnFormatter,
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState("");
@@ -36,6 +38,15 @@ export const Table: React.FC<TableProps> = ({
     } else {
       setSortColumn(columnId);
       setSortDirection("asc");
+    }
+  };
+
+  const handleUpdateColumnFormatter = (
+    columnId: string,
+    newFormatter?: CustomFormatterType
+  ) => {
+    if (onUpdateColumnFormatter) {
+      onUpdateColumnFormatter(columnId, newFormatter);
     }
   };
 
@@ -126,6 +137,7 @@ export const Table: React.FC<TableProps> = ({
           onColumnVisibilityChange={handleColumnVisibilityChange}
           onFilter={handleFilter}
           onLabelChange={handleLabelChange}
+          onFormatterChange={handleUpdateColumnFormatter}
         />
         <TableSearch onSearch={handleSearch} />
         <TablePagination

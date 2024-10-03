@@ -3,7 +3,11 @@
 
 import React, { useState, useEffect, useMemo } from "react";
 import { Table } from "@/components/Table";
-import { Visualization, Execution } from "@/types/supabase";
+import {
+  Visualization,
+  Execution,
+  CustomFormatterType,
+} from "@/types/supabase";
 import { debounce } from "lodash";
 import { useUpdateVisualizationOptions } from "@/hooks/supabase/useUpdateVisualizationOptions";
 
@@ -51,6 +55,24 @@ const Preview: React.FC<PreviewProps> = ({ visualization, execution }) => {
     setLocalOptions({ ...localOptions, columns: updatedColumns });
   };
 
+  const handleUpdateColumnFormatter = (
+    columnId: string,
+    newFormatter?: CustomFormatterType
+  ) => {
+    const updatedColumns = localOptions.columns.map((col) =>
+      col.id === columnId
+        ? {
+            ...col,
+            formatterOptions: {
+              ...col.formatterOptions,
+              customFormatter: newFormatter,
+            },
+          }
+        : col
+    );
+    setLocalOptions({ ...localOptions, columns: updatedColumns });
+  };
+
   return (
     <div className="p-4 w-full h-full flex flex-col">
       {visualization && execution && (
@@ -62,6 +84,7 @@ const Preview: React.FC<PreviewProps> = ({ visualization, execution }) => {
               pageSize={localOptions.pageSize}
               onUpdateColumnVisibility={handleUpdateColumnVisibility}
               onUpdateColumnLabel={handleUpdateColumnLabel}
+              onUpdateColumnFormatter={handleUpdateColumnFormatter}
             />
           ) : (
             <div>Unsupported visualization type.</div>

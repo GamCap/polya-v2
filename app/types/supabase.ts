@@ -128,3 +128,4 @@ export type FormatterOptions = z.infer<typeof FormatterOptionsSchema>;
 export type Metadata = z.infer<typeof MetadataSchema>;
 export type UnitEnum = z.infer<typeof UnitEnum>;
 export type ValueTypeEnum = z.infer<typeof ValueTypeEnum>;
+export type CustomFormatterType = z.infer<typeof CustomFormatter>;

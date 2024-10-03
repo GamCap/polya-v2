@@ -1,10 +1,8 @@
-// CustomizeMenu.tsx
 "use client";
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Button } from "@/components/ui/Button";
-import { TextInput } from "@/components/ui/TextInput";
-import { Checkbox } from "@/components/ui/Checkbox";
-import { Column } from "@/types/supabase";
+import { Column, CustomFormatterType } from "@/types/supabase";
+import { CustomizeMenuColumn } from "./CustomizeMenuColumn";
 
 interface CustomizeMenuProps {
   columns: Column[];
@@ -12,6 +10,10 @@ interface CustomizeMenuProps {
   onFilter: (filters: { [key: string]: any }) => void;
   onColumnVisibilityChange: (columnId: string, visible: boolean) => void;
   onLabelChange?: (columnId: string, newLabel: string) => void;
+  onFormatterChange?: (
+    columnId: string,
+    newFormatter: CustomFormatterType | undefined
+  ) => void;
 }
 
 export const CustomizeMenu: React.FC<CustomizeMenuProps> = ({
@@ -20,6 +22,7 @@ export const CustomizeMenu: React.FC<CustomizeMenuProps> = ({
   onFilter,
   onColumnVisibilityChange,
   onLabelChange,
+  onFormatterChange,
 }) => {
   const [filters, setFilters] = useState<{ [key: string]: any }>({});
   const [isOpen, setIsOpen] = useState(false);
@@ -52,6 +55,15 @@ export const CustomizeMenu: React.FC<CustomizeMenuProps> = ({
     }
   };
 
+  const handleFormatterChangeLocal = (
+    columnId: string,
+    newFormatter: CustomFormatterType | undefined
+  ) => {
+    if (onFormatterChange) {
+      onFormatterChange(columnId, newFormatter);
+    }
+  };
+
   const handleClickOutside = (e: MouseEvent) => {
     if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
       setIsOpen(false);
@@ -69,124 +81,6 @@ export const CustomizeMenu: React.FC<CustomizeMenuProps> = ({
     };
   }, [isOpen]);
 
-  const renderInputField = (column: Column) => {
-    // Disable filtering if the column is hidden
-    const isDisabled = !visibleColumns.includes(column.id);
-
-    switch (column.filterType) {
-      case "range":
-        return (
-          <div className="flex gap-2">
-            <TextInput
-              type="number"
-              wrapperClassName="w-32"
-              placeholder="Min"
-              value={filters[column.id]?.min || ""}
-              onChange={(e) =>
-                handleInputChange(column.id, {
-                  ...filters[column.id],
-                  min: e.target.value,
-                })
-              }
-              isDisabled={isDisabled}
-            />
-            <TextInput
-              type="number"
-              wrapperClassName="w-32"
-              placeholder="Max"
-              value={filters[column.id]?.max || ""}
-              onChange={(e) =>
-                handleInputChange(column.id, {
-                  ...filters[column.id],
-                  max: e.target.value,
-                })
-              }
-              isDisabled={isDisabled}
-            />
-          </div>
-        );
-      case "boolean":
-        return (
-          <div className="flex gap-2" aria-disabled={isDisabled}>
-            <label>
-              <input
-                type="radio"
-                value="true"
-                checked={filters[column.id] === "true"}
-                onChange={() => handleInputChange(column.id, "true")}
-                disabled={isDisabled}
-              />
-              True
-            </label>
-            <label>
-              <input
-                type="radio"
-                value="false"
-                checked={filters[column.id] === "false"}
-                onChange={() => handleInputChange(column.id, "false")}
-                disabled={isDisabled}
-              />
-              False
-            </label>
-          </div>
-        );
-      case "multi-select":
-        return (
-          <div className="absolute left-0 right-0 flex flex-row items-center gap-2 overflow-x-auto scrollbar py-2">
-            {column.options?.map((option) => (
-              <Button
-                key={option}
-                variant={
-                  filters[column.id]?.includes(option) ? "primary" : "active"
-                }
-                size="xsmall"
-                onClick={() => {
-                  const newValue = filters[column.id]?.includes(option)
-                    ? filters[column.id].filter((v: any) => v !== option)
-                    : [...(filters[column.id] || []), option];
-                  handleInputChange(column.id, newValue);
-                }}
-                disabled={isDisabled}
-              >
-                {option}
-              </Button>
-            ))}
-          </div>
-        );
-      case "date-range":
-        return (
-          <div className="flex gap-2">
-            <TextInput
-              wrapperClassName="w-32"
-              type="date"
-              value={filters[column.id]?.start || ""}
-              onChange={(e) =>
-                handleInputChange(column.id, {
-                  ...filters[column.id],
-                  start: e.target.value,
-                })
-              }
-              isDisabled={isDisabled}
-            />
-            <TextInput
-              wrapperClassName="w-32"
-              type="date"
-              value={filters[column.id]?.end || ""}
-              onChange={(e) =>
-                handleInputChange(column.id, {
-                  ...filters[column.id],
-                  end: e.target.value,
-                })
-              }
-              isDisabled={isDisabled}
-            />
-          </div>
-        );
-      default:
-    }
-    return null;
-  };
-
   return (
     <div>
       <Button variant="active" size="small" onClick={() => setIsOpen(true)}>
@@ -198,43 +92,31 @@ export const CustomizeMenu: React.FC<CustomizeMenuProps> = ({
             ref={modalRef}
             className="bg-white dark:bg-[#2C2C2C] bg-opacity-10 dark:bg-opacity-20 backdrop-blur-sm rounded-md text-basic-10-auto-regular w-fit z-50 max-h-full flex flex-col"
           >
-            <div className="flex flex-col grow min-h-0 overflow-y-auto scrollbar">
+            <div className="flex flex-wrap grow min-h-0 overflow-y-auto scrollbar gap-4">
               {columns.map((column) => (
                 <div
-                  className="flex flex-col items-start gap-2 px-4 py-2"
+                  className="flex-grow flex-basis-0 min-w-[200px]"
                   key={column.id}
                 >
-                  <div className="flex items-center gap-2">
-                    <Checkbox
-                      label={column.label || column.id}
-                      checked={visibleColumns.includes(column.id)}
-                      onChange={() =>
-                        handleVisibilityChange(
-                          column.id,
-                          !visibleColumns.includes(column.id)
-                        )
-                      }
-                    />
-                  </div>
-                  <TextInput
-                    value={column.label || column.id}
-                    onChange={(e) =>
-                      handleLabelChangeLocal(column.id, e.target.value)
-                    }
-                    placeholder="Column Label"
-                    isDisabled={!visibleColumns.includes(column.id)}
+                  <CustomizeMenuColumn
+                    column={column}
+                    visibleColumns={visibleColumns}
+                    filters={filters}
+                    onFilterChange={handleInputChange}
+                    onVisibilityChange={handleVisibilityChange}
+                    onLabelChange={handleLabelChangeLocal}
+                    onFormatterChange={handleFormatterChangeLocal}
                   />
-                  {column.filterable && (
-                    <div className="w-full h-12 relative">
-                      {renderInputField(column)}
-                    </div>
-                  )}
                 </div>
               ))}
             </div>
             <div className="py-1 flex justify-end">
-              <Button variant="subtle" onClick={applyFilters} size="small">
-                Apply Filters
+              <Button
+                variant="subtle"
+                onClick={() => setIsOpen(false)}
+                size="small"
+              >
+                Close
               </Button>
             </div>
           </div>
