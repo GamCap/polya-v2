@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import ReactCodeMirror from "@uiw/react-codemirror";
 import { sql } from "@codemirror/lang-sql";
 import { EditorView, ViewUpdate, keymap } from "@codemirror/view";
@@ -11,6 +11,7 @@ import { useParams, useRouter } from "next/navigation";
 import { useQueryDetails } from "@/hooks/supabase/useQueryDetails";
 import { useCreateQuery } from "@/hooks/supabase/useCreateQuery";
 import { useUpdateQuery } from "@/hooks/supabase/useUpdateQuery";
+import { useDataSources } from "@/hooks/supabase/useDataSources";
 import { Button } from "../ui/Button";
 
 const CodeEditor: React.FC = () => {
@@ -22,12 +23,20 @@ const CodeEditor: React.FC = () => {
 
   const [queryText, setQueryText] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
+  const [lastExecutionDate, setLastExecutionDate] = useState<Date | null>(null);
+  const [executionError, setExecutionError] = useState<string | null>(null);
 
   const { data: queryData } = useQueryDetails(queryId || "");
+  const { data: dataSources } = useDataSources();
 
   useEffect(() => {
     if (queryData) {
       setQueryText(queryData.query);
+      const lastExecution =
+        queryData.executions[queryData.executions.length - 1];
+      if (lastExecution) {
+        setLastExecutionDate(new Date(lastExecution.executedAt));
+      }
     }
   }, [queryData]);
 
@@ -39,14 +48,13 @@ const CodeEditor: React.FC = () => {
   };
 
   const executeQuery = async () => {
-    if (!queryText.trim()) {
-      alert("Please enter a valid SQL query.");
-      return;
-    }
-
-    setLoading(true);
-
     try {
+      if (!queryText.trim()) {
+        throw new Error("Query is empty.");
+      }
+      setLoading(true);
+      setExecutionError(null);
+
       if (!queryId) {
         const data = await createQueryMutation.mutateAsync({
           userId: "6d937336-daf2-4412-9949-c3b59ef73d3a",
@@ -67,16 +75,11 @@ const CodeEditor: React.FC = () => {
         if (!updateData.execution_id) {
           throw new Error("Failed to create execution.");
         }
-
-        alert("Query executed successfully!");
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error(error);
-      alert(
-        error instanceof Error
-          ? error.message
-          : "An error occurred while executing the query."
-      );
+      console.log(error.message);
+      setExecutionError(error.message);
     } finally {
       setLoading(false);
     }
@@ -87,7 +90,6 @@ const CodeEditor: React.FC = () => {
       key: "Tab",
       shift: indentLess,
       run: (view: EditorView) => {
-        //if the completion is active, accept the completion, otherwise insert a tab
         if (completionStatus(view.state) === "active") {
           acceptCompletion(view);
         } else {
@@ -98,12 +100,42 @@ const CodeEditor: React.FC = () => {
     },
   ]);
 
+  const mySchema = useMemo(() => {
+    if (!dataSources) return undefined;
+
+    const schema: Record<string, any> = {
+      ethereum: {},
+    };
+
+    dataSources.forEach((table) => {
+      const tableName = table.table_name;
+      const columnNames = table.columns.map((column) => column.column_name);
+      schema.ethereum[tableName] = columnNames;
+    });
+
+    return {
+      ...schema,
+    };
+  }, [dataSources]);
+
+  //TODO: add default schema and table to global state to change it from the UI (data sources component)
+  const extensions = useMemo(() => {
+    return [
+      sql({
+        schema: mySchema,
+        defaultSchema: "ethereum",
+        defaultTable: "blocks",
+      }),
+      customKeymap,
+    ];
+  }, [mySchema, customKeymap]);
+
   return (
     <div className="flex flex-col w-full h-full">
       <ReactCodeMirror
         indentWithTab={false}
         value={queryText}
-        extensions={[sql(), customKeymap]}
+        extensions={extensions}
         onChange={handleChange}
         height="100%"
         className="scrollbar w-full h-full text-title-12-auto-regular"
@@ -115,7 +147,12 @@ const CodeEditor: React.FC = () => {
           highlightSelectionMatches: true,
         }}
       />
-      <EditorControls onRun={executeQuery} loading={loading} />
+      <EditorControls
+        onRun={executeQuery}
+        loading={loading}
+        error={executionError}
+        lastExecutionDate={lastExecutionDate}
+      />
     </div>
   );
 };
@@ -123,13 +160,41 @@ const CodeEditor: React.FC = () => {
 interface EditorControlsProps {
   onRun: () => void;
   loading: boolean;
+  error: string | null;
+  lastExecutionDate: Date | null;
 }
 
-const EditorControls: React.FC<EditorControlsProps> = ({ onRun, loading }) => {
+const EditorControls: React.FC<EditorControlsProps> = ({
+  onRun,
+  loading,
+  error,
+  lastExecutionDate,
+}) => {
   return (
-    <div className="flex flex-row gap-2 w-full justify-end bg-[#f5f5f5] dark:bg-[#282c34] border-t border-[#ddd] dark:border-none p-2">
+    <div className="flex flex-row items-center gap-2 w-full justify-end bg-[#f5f5f5] dark:bg-[#282c34] border-t border-[#ddd] dark:border-none p-2">
+      <div className="flex-grow text-right text-basic-10-auto-regular">
+        {loading ? (
+          <span>Executing...</span>
+        ) : error ? (
+          <span className="text-accent-red">{error}</span>
+        ) : lastExecutionDate ? (
+          <span>
+            Last executed at:{" "}
+            {lastExecutionDate.toLocaleDateString("en-US", {
+              year: "2-digit",
+              month: "2-digit",
+              day: "2-digit",
+              hour: "2-digit",
+              minute: "2-digit",
+              second: "2-digit",
+            })}
+          </span>
+        ) : (
+          <span></span>
+        )}
+      </div>
       <Button variant="subtle" size="xsmall" onClick={onRun} disabled={loading}>
-        {loading ? "Executing..." : "Run"}
+        Run
       </Button>
     </div>
   );
